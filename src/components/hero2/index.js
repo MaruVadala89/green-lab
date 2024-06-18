@@ -6,8 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 import hero1 from '../../images/slider/slide-2.jpg'
 import hero2 from '../../images/slider/slide-3.jpg'
-import hero3 from '../../images/slider/slide-4.jpg'
-
 
 
 class Hero2 extends Component {
@@ -37,7 +35,7 @@ class Hero2 extends Component {
                                                 <h2><span>Tu</span> Vivero <span>Urbano</span></h2>
                                             </div>
                                             <div className="btns">
-                                                <Link to="/shop" className="btn theme-btn">Shop Now <i className="fa fa-angle-double-right"></i></Link>
+                                                <Link to="/shop" className="btn theme-btn">Compra ahora <i className="fa fa-angle-double-right"></i></Link>
                                             </div>
                                         </div>
                                     </div>
@@ -53,23 +51,7 @@ class Hero2 extends Component {
                                                 <h2><span>Con</span> Ofertas <span>Unicas</span></h2>
                                             </div>
                                             <div className="btns">
-                                                <Link to="/shop" className="btn theme-btn">Shop Now <i className="fa fa-angle-double-right"></i></Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="slide">
-                            <div className="slide-inner" style={{ backgroundImage: `url(${hero3})` }}>
-                                <div className="container">
-                                    <div className="row">
-                                        <div className="col col-lg-5 slide-caption">
-                                            <div className="slide-title">
-                                                <h2><span>tu</span> plantin <span>Preferido</span></h2>
-                                            </div>
-                                            <div className="btns">
-                                                <Link to="/shop" className="btn theme-btn">Shop Now <i className="fa fa-angle-double-right"></i></Link>
+                                                <Link to="/shop" className="btn theme-btn">Compra ahora <i className="fa fa-angle-double-right"></i></Link>
                                             </div>
                                         </div>
                                     </div>
