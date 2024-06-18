@@ -18,9 +18,11 @@ class Hero extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col col-lg-5 slide-caption">
+
                                     <div className="slide-title">
-                                        <h2><span>Fresh</span> Organic <span>Honey</span></h2>
+                                        <h2><span>pedo</span> caca <span>Honey</span></h2>
                                     </div>
+                                    
                                     <div className="btns">
                                         <Link to="/shop" className="btn theme-btn">Shop Now <i className="fa fa-angle-double-right"></i></Link>
                                     </div>

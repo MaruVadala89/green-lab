@@ -1,7 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
-
-import Homepage from '../HomePage'
 import Homepage2 from '../HomePage2'
 import AboutPage from '../AboutPage'
 import ShopPage from '../ShopPage'
@@ -31,9 +29,7 @@ const AllRoute = () => {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route exact path='/' element={<Homepage />} />
-          <Route path='/home' element={<Homepage />} />
-          <Route path='/home2' element={<Homepage2 />} />
+          <Route exact path='/' element={<Homepage2 />} />
           <Route path='/about' element={<AboutPage />} />
           <Route path='/shop' element={<ShopPage />} />
           <Route path='/product-single/:id' element={<ProductDetailsPage />} />

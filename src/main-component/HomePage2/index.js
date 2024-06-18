@@ -38,22 +38,7 @@ const HomePage2 =({ addToCart,addToWishList }) => {
             <Hero2/>
             <Category2/>
             <About/>
-            <Product
-                addToCartProduct={addToCartProduct}
-                addToWishListProduct={addToWishListProduct}
-                products={products}
-            />
-            <OfferSection/>
-            <FlashSale
-                addToCartProduct={addToCartProduct}
-                addToWishListProduct={addToWishListProduct}
-                products={products}
-            />
-            <Project/>
-            <Service/>
-            <Testimonial/>
             <Client/>
-            <BlogSection/>
             <Footer/> 
             <Scrollbar/>
         </Fragment>
