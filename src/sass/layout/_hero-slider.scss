@@ -217,14 +217,14 @@
 
 				span{
 					letter-spacing: 17px;
-					color:$theme-primary-color;
+					color:$green;
 					@media(max-width:991px){
 						color: $white;
 						letter-spacing: unset;
 					}
 
 					&:last-child{
-						color: $theme-secondary-color;
+						color: $green2;
 						@media(max-width:991px){
 							color: $white;
 						}
@@ -443,16 +443,16 @@
 		.slide-title {
 			h2{
 				@media(max-width:991px){
-					color:$dark-gray;
+					color:$blue;
 				}
 				span{
 					@media(max-width:991px){
-						color:$theme-primary-color;
+						color:$green;
 					}
 	
 					&:last-child{
 						@media(max-width:991px){
-							color: $theme-secondary-color;
+							color: $green2;
 						}
 					}
 				}

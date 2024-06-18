@@ -32,7 +32,11 @@ class Hero2 extends Component {
                                     <div className="row">
                                         <div className="col col-lg-5 slide-caption">
                                             <div className="slide-title">
-                                                <h2><span>Tu</span> Vivero <span>Urbano</span></h2>
+                                                <h2>
+                                                    <div className="slide-title first"><span>Tu</span></div>
+                                                    <div className="slide-title first"><span>Vivero</span></div>
+                                                    <div className="slide-title first"><span>Urbano</span></div>
+                                                </h2>
                                             </div>
                                             <div className="btns">
                                                 <Link to="/shop" className="btn theme-btn">Compra ahora <i className="fa fa-angle-double-right"></i></Link>
@@ -48,7 +52,11 @@ class Hero2 extends Component {
                                     <div className="row">
                                         <div className="col col-lg-5 slide-caption">
                                             <div className="slide-title">
-                                                <h2><span>Con</span> Ofertas <span>Unicas</span></h2>
+                                                <h2>
+                                                    <div className="slide-title second">Con</div>
+                                                    <div className="slide-title second">Ofertas</div>
+                                                    <div className="slide-title second">Unicas</div>
+                                                </h2>
                                             </div>
                                             <div className="btns">
                                                 <Link to="/shop" className="btn theme-btn">Compra ahora <i className="fa fa-angle-double-right"></i></Link>
