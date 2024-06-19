@@ -77,7 +77,7 @@ class Header extends Component {
                     <li>
 
                       <Link onClick={ClickHandler} className="active" to="/">
-                        Home
+                        Inicio
                       </Link>
 
                     </li>
@@ -89,7 +89,7 @@ class Header extends Component {
 
             
                     <li>
-                      <Link onClick={ClickHandler} to="/contact">Contact</Link>
+                      <Link onClick={ClickHandler} to="/contact">Contacto</Link>
                     </li>
                   </ul>
                 </div>
@@ -112,7 +112,7 @@ class Header extends Component {
                           <Link onClick={ClickHandler} to="/login">Login</Link>
                         </li>
                         <li>
-                          <Link onClick={ClickHandler} to="/register">Register</Link>
+                          <Link onClick={ClickHandler} to="/register">Registrate</Link>
                         </li>
 
                       </ul>

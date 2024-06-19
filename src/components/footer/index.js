@@ -17,45 +17,21 @@ const Footer = (props) =>{
                     <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
                         <div className="widget about-widget">
                             <div className="logo widget-title">
-                                <Link onClick={ClickHandler} to="/"><img src={Logo} alt="ft-logo"/> Annahl</Link>
+                                <Link onClick={ClickHandler} to="/"><img src={Logo} alt="ft-logo"/></Link>
                             </div>
-                            <p>Management consulting includes a broad range of activities, and the many firms and
-                                their members often define these practices.</p>
-                            <ul>
-                                <li>
-                                    <Link onClick={ClickHandler} to="/">
-                                        <i className="ti-facebook"></i>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link onClick={ClickHandler} to="/">
-                                        <i className="ti-twitter-alt"></i>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link onClick={ClickHandler} to="/">
-                                        <i className="ti-instagram"></i>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link onClick={ClickHandler} to="/">
-                                        <i className="ti-google"></i>
-                                    </Link>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                     <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
                         <div className="widget tp-service-link-widget">
                             <div className="widget-title">
-                                <h3>Contact </h3>
+                                <h3>Contacto </h3>
                             </div>
                             <div className="contact-ft">
                                 <ul>
-                                    <li><i className="fi flaticon-pin"></i>7 Green Lake Street Crawfordsville, IN 47933
+                                    <li><i className="fi flaticon-pin"></i>Bv. San Juan 100, Centro, Cordoba, Argentina.
                                     </li>
-                                    <li><i className="fi flaticon-call"></i>+1 800 123 456 789</li>
-                                    <li><i className="fi flaticon-envelope"></i>Annahl@gmail.com</li>
+                                    <li><i className="fi flaticon-call"></i>+54 9 351 2340056</li>
+                                    <li><i className="fi flaticon-envelope"></i>greenlab@gmail.com</li>
                                 </ul>
                             </div>
                         </div>
@@ -63,22 +39,22 @@ const Footer = (props) =>{
                     <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
                         <div className="widget link-widget">
                             <div className="widget-title">
-                                <h3>My Account</h3>
+                                <h3>Mi cuenta</h3>
                             </div>
                             <ul>
-                                <li><Link onClick={ClickHandler} to="/project">Our Projects</Link></li>
-                                <li><Link onClick={ClickHandler} to="/shop">Our Shop</Link></li>
-                                <li><Link onClick={ClickHandler} to="/wishlist">Wishlist</Link></li>
-                                <li><Link onClick={ClickHandler} to="/checkout">Checkout</Link></li>
+                                <li><Link onClick={ClickHandler} to="/cart">Carrito</Link></li>
+                                <li><Link onClick={ClickHandler} to="/shop">Shop</Link></li>
+                                <li><Link onClick={ClickHandler} to="/wishlist">Preferidos</Link></li>
+                                <li><Link onClick={ClickHandler} to="/checkout">Termina tu compra</Link></li>
                             </ul>
                         </div>
                     </div>
                     <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
                         <div className="widget newsletter-widget">
                             <div className="widget-title">
-                                <h3>Newsletter</h3>
+                                <h3>Descuentos</h3>
                             </div>
-                            <p>You will be notified when somthing new will be appear.</p>
+                            <p>Si estas interesado/a te avisemos de nuestros descuentos, dejanos tu email.</p>
                             <form>
                                 <div className="input-1">
                                     <input type="email" className="form-control" placeholder="Email Address *" required/>
@@ -96,17 +72,10 @@ const Footer = (props) =>{
             <div className="container">
                 <div className="row">
                     <div className="col col-xs-12">
-                        <p className="copyright"> Copyright &copy; 2021 Annahl by <Link onClick={ClickHandler} to="/">themepresss</Link>.
-                            All Rights Reserved.</p>
+                        <p className="copyright"> Copyright &copy; 2023 Maru Vadala - Todos los derechos reservados.</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div className="footer-shape1">
-            <i className="fi flaticon-honeycomb"></i>
-        </div>
-        <div className="footer-shape2">
-            <i className="fi flaticon-honey-1"></i>
         </div>
     </footer>
   )
