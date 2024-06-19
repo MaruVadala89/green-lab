@@ -55,7 +55,7 @@ class Hero2 extends Component {
                                                 <h2>
                                                     <div className="slide-title second">Con</div>
                                                     <div className="slide-title second">Ofertas</div>
-                                                    <div className="slide-title second">Unicas</div>
+                                                    <div className="slide-title seco">Unicas</div>
                                                 </h2>
                                             </div>
                                             <div className="btns">

@@ -37,6 +37,7 @@ const HomePage2 =({ addToCart,addToWishList }) => {
             <Navbar hClass={'header-style-2'}/>
             <Hero2/>
             <Category2/>
+            <Client/>
             <About/>
             <Client/>
             <Footer/> 

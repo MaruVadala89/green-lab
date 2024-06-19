@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+
 import catimg from '../../images/category/icon-1.png'
 import catimg2 from '../../images/category/icon-2.png'
 import catimg3 from '../../images/category/icon-3.png'
@@ -20,9 +21,8 @@ const Category2 = (props) => {
                                     <img src={catimg} alt=""/>
                                 </div>
                                 <div className="category-content">
-                                    <h2><Link onClick={ClickHandler} to="/shop">Queen Bee Honey</Link></h2>
-                                    <p>Lorem Ipsum is simply dummy text of the printing industry has been the industry's
-                                        standard eos fugit industry's standard consectetur ipsum.</p>
+                                    <h2 className="title-category"><Link onClick={ClickHandler} to="/shop">Plantas</Link></h2>
+                                    <p>Descubre la magia de tener un rincón verde en tu hogar o oficina. En Green Lab, ofrecemos una selección exclusiva de plantas que no solo embellecen, sino que también purifican el aire y elevan tu bienestar. </p>
                                 </div>
                             </div>
                         </div>
@@ -32,9 +32,8 @@ const Category2 = (props) => {
                                     <img src={catimg2} alt=""/>
                                 </div>
                                 <div className="category-content">
-                                    <h2><Link onClick={ClickHandler} to="/shop">Sunflower Honey</Link></h2>
-                                    <p>Lorem Ipsum is simply dummy text of the printing industry has been the industry's
-                                        standard eos fugit industry's standard consectetur ipsum.</p>
+                                    <h2 className="title-category"><Link onClick={ClickHandler} to="/shop">Flores</Link></h2>
+                                    <p>Añade un toque de color y fragancia a tu hogar con nuestra selección de flores frescas. En Green Lab, ofrecemos una variedad de flores que no solo decoran, sino que también traen alegría y vida a cualquier rincón. </p>
                                 </div>
                             </div>
                         </div>
@@ -44,9 +43,8 @@ const Category2 = (props) => {
                                     <img src={catimg3} alt=""/>
                                 </div>
                                 <div className="category-content">
-                                    <h2><Link onClick={ClickHandler} to="/shop">Manuka Honey</Link></h2>
-                                    <p>Lorem Ipsum is simply dummy text of the printing industry has been the industry's
-                                        standard eos fugit industry's standard consectetur ipsum.</p>
+                                    <h2 className="title-category"><Link onClick={ClickHandler} to="/shop">Arboles</Link></h2>
+                                    <p>Crea un oasis de tranquilidad y belleza con nuestros árboles de calidad. En Green Lab, ofrecemos una variedad de árboles que aportan sombra, frescura y un ambiente natural a tu espacio. </p>
                                 </div>
                             </div>
                         </div>
