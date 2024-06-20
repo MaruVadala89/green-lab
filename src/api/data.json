@@ -2,118 +2,303 @@
   {
     "id": 1,
     "proImg": "/product/1.png",
-    "offer": "-28%",
-    "title": "Manuka Honey ",
-    "price": "85.00",
-    "delPrice": "98.00",
+    "offer": "-10%",
+    "title": "Petunia ",
+    "price": "1.200",
+    "delPrice": "1.080",
     "link": "/product-single",
-    "size": "small",
+    "Clase": "exterior",
+    "Tipo": "flor",
+
+    "Size": "small",
     "color": "000",
     "brand": "forest",
+
     "stock": "In Stock"
   },
   {
     "id": 2,
     "proImg": "/product/2.png",
-    "offer": "-25%",
-    "title": "Raw Honey",
-    "price": "100.00",
-    "delPrice": "158.00",
+    "offer": "-10%",
+    "title": "Gazania",
+    "price": "2.100",
+    "delPrice": "1.890",
     "link": "/product-single",
+    "Clase": "exterior",
+    "Tipo": "flor",
+    
     "size": "small",
     "color": "000",
     "brand": "flower",
+
     "stock": "In Stock"
   },
   {
     "id": 3,
     "proImg": "/product/3.png",
     "offer": "New",
-    "title": "Wildflower Honey",
-    "price": "75.00",
-    "delPrice": "88.00",
+    "title": "Margarita Africana",
+    "price": "1.850",
     "link": "/product-single",
+    "Clase": "exterior",
+    "Tipo": "flor",
+
     "size": "small",
     "color": "000",
     "brand": "forest",
-    "stock": "Stock Out"
+
+    "stock": "In Stock"
   },
   {
     "id": 4,
     "proImg": "/product/4.png",
-    "offer": "-20%",
-    "title": "Queen Bee Honey",
-    "price": "85.00",
-    "delPrice": "98.00",
+    "offer": "-15%",
+    "title": "Pothus",
+    "price": "2.500",
+    "delPrice": "2.125",
     "link": "/product-single",
+    "Clase": "interior",
+    "Tipo": "planta",
+
     "size": "small",
     "color": "000",
     "brand": "flower",
+
     "stock": "In Stock"
   },
   {
     "id": 5,
     "proImg": "/product/5.png",
-    "offer": "-18%",
-    "title": "Mustard Flower Honey",
-    "price": "95.00",
-    "delPrice": "108.00",
+    "offer": "-15%",
+    "title": "Peperonia",
+    "price": "3.400",
+    "delPrice": "2.900",
     "link": "/product-single",
+    "Clase": "interior",
+    "Tipo": "planta",
+    
     "size": "small",
     "color": "fff",
     "brand": "hill",
-    "stock": "Stock out"
+
+    "stock": "In Stock"
   },
   {
     "id": 6,
     "proImg": "/product/6.png",
     "offer": "New",
-    "title": "Pure Hill Honey",
-    "price": "88.00",
-    "delPrice": "75.00",
+    "title": "Monstera",
+    "price": "13.000",
     "link": "/product-single",
+    "Clase": "interior",
+    "Tipo": "planta",
+    
+
     "size": "medium",
     "color": "000",
     "brand": "flower",
+
     "stock": "In Stock"
   },
   {
     "id": 7,
     "proImg": "/product/7.png",
-    "offer": "-15%",
-    "title": "Black Seed Flower Honey",
-    "price": "75.00",
-    "delPrice": "99.00",
+    "offer": "-10%",
+    "title": "Mandarina Criolla",
+    "price": "8.800",
+    "delPrice": "7.920",
     "link": "/product-single",
+    "Clase": "exterior",
+    "Tipo": "arbol",
+    
+
     "size": "large",
     "color": "cf1105",
     "brand": "hill",
+
     "stock": "Stock Out"
   },
   {
     "id": 8,
     "proImg": "/product/8.png",
     "offer": "New",
-    "title": "Mango Flower Honey",
-    "price": "155.00",
-    "delPrice": "198.00",
+    "title": "Pomelo Blanco",
+    "price": "8.800",
     "link": "/product-single",
+    "Clase": "exterior",
+    "Tipo": "arbol",
+
     "size": "small",
     "color": "cf1105",
     "brand": "flower",
+
     "stock": "In Stock"
   },
   {
     "id": 9,
-    "proImg": "/product/1.png",
-    "offer": "-28%",
-    "title": "Manuka Honey",
-    "price": "155.00",
-    "delPrice": "198.00",
+    "proImg": "/product/9.png",
+    "offer": "-10%",
+    "title": "Cerezo de Flor",
+    "price": "21.291",
+    "delPrice": "19.172",
     "link": "/product-single",
+    "Clase": "exterior",
+    "Tipo": "arbol",
+
     "size": "small",
     "color": "cf1105",
     "brand": "flower",
+
+    "stock": "In Stock"
+  },
+  {
+    "id": 10,
+    "proImg": "/product/10.png",
+    "offer": "-10%",
+    "title": "Petunia",
+    "price": "2.863",
+    "delPrice": "2.577",
+    "link": "/product-single",
+    "Clase": "exterior",
+    "Tipo": "flor",
+
+    "size": "small",
+    "color": "cf1105",
+    "brand": "flower",
+
+    "stock": "In Stock"
+  },
+  {
+    "id": 11,
+    "proImg": "/product/11.png",
+    "offer": "-15%",
+    "title": "Pensamiento",
+    "price": "935",
+    "delPrice": "795",
+    "link": "/product-single",
+    "Clase": "exterior",
+    "Tipo": "flor",
+
+    "size": "small",
+    "color": "cf1105",
+    "brand": "flower",
+
+    "stock": "In Stock"
+  },
+  {
+    "id": 12,
+    "proImg": "/product/12.png",
+    "offer": "New",
+    "title": "Aleli",
+    "price": "624",
+    "link": "/product-single",
+    "Clase": "exterior",
+    "Tipo": "flor",
+
+    "size": "small",
+    "color": "cf1105",
+    "brand": "flower",
+
+    "stock": "In Stock"
+  },
+  {
+    "id": 13,
+    "proImg": "/product/13.png",
+    "offer": "-10%",
+    "title": "Coleus",
+    "price": "1.700",
+    "delPrice": "1.530",
+    "link": "/product-single",
+    "Clase": "interior",
+    "Tipo": "planta",
+
+    "size": "small",
+    "color": "cf1105",
+    "brand": "flower",
+
+    "stock": "In Stock"
+  },
+  {
+    "id": 14,
+    "proImg": "/product/14.png",
+    "offer": "-10%",
+    "title": "Helecho Arroz",
+    "price": "4.500",
+    "delPrice": "4.050",
+    "link": "/product-single",
+    "Clase": "interior",
+    "Tipo": "planta",
+
+    "size": "small",
+    "color": "cf1105",
+    "brand": "flower",
+
+    "stock": "In Stock"
+  },
+  {
+    "id": 15,
+    "proImg": "/product/15.png",
+    "offer": "-15%",
+    "title": "Citara",
+    "price": "5.000",
+    "delPrice": "4.250",
+    "link": "/product-single",
+    "Clase": "interior",
+    "Tipo": "planta",
+
+    "size": "small",
+    "color": "cf1105",
+    "brand": "flower",
+
+    "stock": "In Stock"
+  },
+  {
+    "id": 16,
+    "proImg": "/product/16.png",
+    "offer": "New",
+    "title": "Callistemon Rojo",
+    "price": "12.000",
+    "link": "/product-single",
+    "Clase": "Exterior",
+    "Tipo": "arbol",
+
+    "size": "small",
+    "color": "cf1105",
+    "brand": "flower",
+
+    "stock": "In Stock"
+  },
+  {
+    "id": 17,
+    "proImg": "/product/17.png",
+    "offer": "New",
+    "title": "Nogal",
+    "price": "14.500",
+    "link": "/product-single",
+    "Clase": "Exterior",
+    "Tipo": "arbol",
+
+    "size": "small",
+    "color": "cf1105",
+    "brand": "flower",
+
+    "stock": "In Stock"
+  },
+  {
+    "id": 18,
+    "proImg": "/product/18.png",
+    "offer": "-10%",
+    "title": "Kiri",
+    "price": "9.200",
+    "delPrice": "8.280",
+    "link": "/product-single",
+    "Clase": "Exterior",
+    "Tipo": "arbol",
+
+    "size": "small",
+    "color": "cf1105",
+    "brand": "flower",
+    
     "stock": "In Stock"
   }
 ]
