@@ -57,7 +57,9 @@ const ShopPage = ({ addToCart, addToWishList }) => {
   return (
     <Fragment>
       <Navbar hClass={"header-style-2"} />
+
       <PageTitle pageTitle={"Shop"} pagesub={"Shop"} />
+
       <div className="shop-section">
         <div className="container">
           <div className="row">
