@@ -3,24 +3,25 @@ import React from "react";
 const prices = [
   {
     id: 1,
-    min: 50,
-    max: 100,
+    min: 500,
+    max: 3000,
   },
   {
     id: 2,
-    min: 100,
-    max: 200,
+    min: 3050,
+    max: 6000,
   },
   {
     id: 3,
-    min: 200,
+    min: 6050,
     max: null,
   },
 ];
 
-const sizes = ["small", "medium", "large"];
-const colors = ["fff", "000", "cf1105"];
+const categories = ["Plantas", "Arboles", "Flores"];
 const brands = ["flower", "hill", "forest"];
+
+
 
 const FilterSidebar = ({ filter, changeHandler, priceChangeHandler }) => {
   return (
@@ -28,14 +29,14 @@ const FilterSidebar = ({ filter, changeHandler, priceChangeHandler }) => {
       <div className="shop-filter-wrap">
         <div className="filter-item">
           <div className="shop-filter-item">
-            <h2>Search</h2>
+            <h2>Buscar</h2>
             <div className="shop-filter-search">
               <form>
                 <div>
                   <input
                     type="text"
                     className="form-control"
-                    placeholder="Search"
+                    placeholder="Buscar"
                   />
                   <button type="submit">
                     <i className="ti-search"></i>
@@ -47,11 +48,11 @@ const FilterSidebar = ({ filter, changeHandler, priceChangeHandler }) => {
         </div>
         <div className="filter-item">
           <div className="shop-filter-item">
-            <h2>Price</h2>
+            <h2>Precio</h2>
             <ul>
               <li>
                 <label className="topcoat-radio-button__label">
-                  All prices
+                  Todos los precios
                   <input
                     type="radio"
                     value={""}
@@ -81,33 +82,34 @@ const FilterSidebar = ({ filter, changeHandler, priceChangeHandler }) => {
             </ul>
           </div>
         </div>
+
         <div className="filter-item">
           <div className="shop-filter-item">
-            <h2>Size</h2>
+            <h2>Categoria</h2>
             <ul>
               <li>
                 <label className="topcoat-radio-button__label">
-                  All Size
+                  Todas las categorias
                   <input
-                    checked={filter.size === ""}
+                    checked={filter.category === ""}
                     type="radio"
                     value=""
                     onChange={changeHandler}
-                    name="size"
+                    name="category"
                   />
                   <span className="topcoat-radio-button"></span>
                 </label>
               </li>
-              {sizes.map((size) => (
+              {categories.map((category) => (
                 <li>
                   <label className="topcoat-radio-button__label">
-                    {size}
+                    {category}
                     <input
-                      checked={filter.size === size}
+                      checked={filter.category === category}
                       type="radio"
-                      value={size}
+                      value={category}
                       onChange={changeHandler}
-                      name="size"
+                      name="category"
                     />
                     <span className="topcoat-radio-button"></span>
                   </label>
@@ -116,30 +118,8 @@ const FilterSidebar = ({ filter, changeHandler, priceChangeHandler }) => {
             </ul>
           </div>
         </div>
-        <div className="filter-item">
-          <div className="shop-filter-item color">
-            <h2> Color</h2>
-            <div className="color-name">
-              <ul>
-                {colors.map((color) => (
-                  <li>
-                    <input
-                      id={color}
-                      onChange={changeHandler}
-                      type="radio"
-                      name="color"
-                      value={color}
-                    />
-                    <label
-                      style={{ background: `#${color}` }}
-                      htmlFor={color}
-                    ></label>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
+
+        
         <div className="filter-item">
           <div className="shop-filter-item">
             <h2>Brand</h2>

@@ -14,8 +14,7 @@ const ShopPage = ({ addToCart, addToWishList }) => {
 
   const [filter, setFilter] = useState({
     price: "",
-    size: "",
-    color: "",
+    category: "",
     brand: "",
   });
 
@@ -41,13 +40,12 @@ const ShopPage = ({ addToCart, addToWishList }) => {
   };
 
   const addToCartProduct = (product) => {
-    addToCart(product, 1, filter.color, filter.size);
+    addToCart(product, 1, filter.category);
   };
 
   const products = productsArray
     .filter((el) => priceFIlter(el.price))
-    .filter((el) => (filter.size ? el.size === filter.size : true))
-    .filter((el) => (filter.color ? el.color === filter.color : true))
+    .filter((el) => (filter.category ? el.category === filter.category : true))
     .filter((el) => (filter.brand ? el.brand === filter.brand : true));
 
   const addToWishListProduct = (products) => {
@@ -58,11 +56,12 @@ const ShopPage = ({ addToCart, addToWishList }) => {
     <Fragment>
       <Navbar hClass={"header-style-2"} />
 
-      <PageTitle pageTitle={"Shop"} pagesub={"Shop"} />
+      <PageTitle pageTitle={"Shop"} pagesub={"shop"} />
 
       <div className="shop-section">
         <div className="container">
           <div className="row">
+
             <FilterSidebar
               filter={filter}
               priceChangeHandler={priceChangeHandler}
