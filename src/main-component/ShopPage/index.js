@@ -15,7 +15,7 @@ const ShopPage = ({ addToCart, addToWishList }) => {
   const [filter, setFilter] = useState({
     price: "",
     category: "",
-    brand: "",
+    clase: "",
   });
 
   const priceChangeHandler = ({ target: { name, value } }) => {
@@ -46,7 +46,7 @@ const ShopPage = ({ addToCart, addToWishList }) => {
   const products = productsArray
     .filter((el) => priceFIlter(el.price))
     .filter((el) => (filter.category ? el.category === filter.category : true))
-    .filter((el) => (filter.brand ? el.brand === filter.brand : true));
+    .filter((el) => (filter.clase ? el.clase === filter.clase : true));
 
   const addToWishListProduct = (products) => {
     addToWishList(products);

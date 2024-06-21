@@ -7,7 +7,7 @@
     "price": "1200",
     "delPrice": "1080",
     "link": "/product-single",
-    "Clase": "exterior",
+    "clase": "Exterior",
     "category": "Flores",
 
     "Size": "small",
@@ -24,7 +24,7 @@
     "price": "2100",
     "delPrice": "1890",
     "link": "/product-single",
-    "Clase": "exterior",
+    "clase": "Exterior",
     "category": "Flores",
     
     "size": "small",
@@ -40,7 +40,7 @@
     "title": "Margarita Africana",
     "price": "1850",
     "link": "/product-single",
-    "Clase": "exterior",
+    "clase": "Exterior",
     "category": "Flores",
 
     "size": "small",
@@ -57,7 +57,7 @@
     "price": "2500",
     "delPrice": "2125",
     "link": "/product-single",
-    "Clase": "interior",
+    "clase": "Interior",
     "category": "Plantas",
 
     "size": "small",
@@ -74,7 +74,7 @@
     "price": "3400",
     "delPrice": "2900",
     "link": "/product-single",
-    "Clase": "interior",
+    "clase": "Interior",
     "category": "Plantas",
     
     "size": "small",
@@ -90,7 +90,7 @@
     "title": "Monstera",
     "price": "13000",
     "link": "/product-single",
-    "Clase": "interior",
+    "clase": "Interior",
     "category": "Plantas",
     
 
@@ -108,7 +108,7 @@
     "price": "8800",
     "delPrice": "7920",
     "link": "/product-single",
-    "Clase": "exterior",
+    "clase": "Exterior",
     "category": "Arboles",
     
 
@@ -125,7 +125,7 @@
     "title": "Pomelo Blanco",
     "price": "8800",
     "link": "/product-single",
-    "Clase": "exterior",
+    "clase": "Exterior",
     "category": "Arboles",
 
     "size": "small",
@@ -142,7 +142,7 @@
     "price": "21291",
     "delPrice": "19.172",
     "link": "/product-single",
-    "Clase": "exterior",
+    "clase": "Exterior",
     "category": "Arboles",
 
     "size": "small",
@@ -159,7 +159,7 @@
     "price": "2863",
     "delPrice": "2.577",
     "link": "/product-single",
-    "Clase": "exterior",
+    "clase": "Exterior",
     "category": "Flores",
 
     "size": "small",
@@ -176,7 +176,7 @@
     "price": "935",
     "delPrice": "795",
     "link": "/product-single",
-    "Clase": "exterior",
+    "clase": "Exterior",
     "category": "Flores",
 
     "size": "small",
@@ -192,7 +192,7 @@
     "title": "Aleli",
     "price": "3100",
     "link": "/product-single",
-    "Clase": "exterior",
+    "clase": "Exterior",
     "category": "Flores",
 
     "size": "small",
@@ -209,7 +209,7 @@
     "price": "1700",
     "delPrice": "1530",
     "link": "/product-single",
-    "Clase": "interior",
+    "clase": "Interior",
     "category": "Plantas",
 
     "size": "small",
@@ -226,7 +226,7 @@
     "price": "4500",
     "delPrice": "4.050",
     "link": "/product-single",
-    "Clase": "interior",
+    "clase": "Interior",
     "category": "Plantas",
 
    
@@ -243,7 +243,7 @@
     "price": "5000",
     "delPrice": "4250",
     "link": "/product-single",
-    "Clase": "interior",
+    "clase": "Interior",
     "category": "Plantas",
 
    
@@ -259,7 +259,7 @@
     "title": "Callistemon Rojo",
     "price": "12000",
     "link": "/product-single",
-    "Clase": "Exterior",
+    "clase": "Exterior",
     "category": "Arboles",
 
 
@@ -275,7 +275,7 @@
     "title": "Nogal",
     "price": "14500",
     "link": "/product-single",
-    "Clase": "Exterior",
+    "clase": "Exterior",
     "category": "Arboles",
 
    
@@ -292,7 +292,7 @@
     "price": "9200",
     "delPrice": "8280",
     "link": "/product-single",
-    "Clase": "Exterior",
+    "clase": "Exterior",
     "category": "Arboles",
 
  

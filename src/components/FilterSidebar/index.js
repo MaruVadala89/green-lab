@@ -19,8 +19,7 @@ const prices = [
 ];
 
 const categories = ["Plantas", "Arboles", "Flores"];
-const brands = ["flower", "hill", "forest"];
-
+const clases = ["Interior", "Exterior"];
 
 
 const FilterSidebar = ({ filter, changeHandler, priceChangeHandler }) => {
@@ -122,31 +121,31 @@ const FilterSidebar = ({ filter, changeHandler, priceChangeHandler }) => {
         
         <div className="filter-item">
           <div className="shop-filter-item">
-            <h2>Brand</h2>
+            <h2>Plantas de interior/exterior</h2>
             <ul>
               <li>
                 <label className="topcoat-radio-button__label">
-                  All Brand
+                  Todas las clases:
                   <input
-                    checked={filter.brand === ""}
+                    checked={filter.clase === ""}
                     type="radio"
                     value=""
                     onChange={changeHandler}
-                    name="brand"
+                    name="clase"
                   />
                   <span className="topcoat-radio-button"></span>
                 </label>
               </li>
-              {brands.map((brand) => (
+              {clases.map((clase) => (
                 <li>
                   <label className="topcoat-radio-button__label">
-                    {brand}
+                    {clase}
                     <input
-                      checked={filter.brand === brand}
+                      checked={filter.clase === clase}
                       type="radio"
-                      value={brand}
+                      value={clase}
                       onChange={changeHandler}
-                      name="brand"
+                      name="clase"
                     />
                     <span className="topcoat-radio-button"></span>
                   </label>
