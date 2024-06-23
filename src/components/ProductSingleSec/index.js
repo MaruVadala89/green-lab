@@ -37,50 +37,15 @@ const ProductSingleSec = ({ item, addToCart }) => {
               <div className="product-single-content">
                 <h5>{item.title}</h5>
                 <h6>${item.price}</h6>
-                <ul className="rating">
-                  <li>
-                    <i className="fa fa-star" aria-hidden="true"></i>
-                  </li>
-                  <li>
-                    <i className="fa fa-star" aria-hidden="true"></i>
-                  </li>
-                  <li>
-                    <i className="fa fa-star" aria-hidden="true"></i>
-                  </li>
-                  <li>
-                    <i className="fa fa-star" aria-hidden="true"></i>
-                  </li>
-                  <li>
-                    <i className="fa fa-star" aria-hidden="true"></i>
-                  </li>
-                </ul>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  kjasdhkjfhLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                   quis ultrices lectus lobortis, dolor et tempus porta, leo mi
                   efficitur ante, in varius felis sem ut mauris. Proin volutpat
                   lorem inorci sed vestibulum tempus. Lorem ipsum dolor sit
                   amet, consectetur adipiscing elit. Aliquam hendrerit sem porta
                   dolor congue sagittis Lorem ipsum dolor sit amet consectetur.
                 </p>
-                <div className="product-filter-item color">
-                  <div className="color-name">
-                    <span>Color :</span>
-                    <ul>
-                      <li className="color1">
-                        <input id="a1" type="radio" name="color" value="30" />
-                        <label htmlFor="a1"></label>
-                      </li>
-                      <li className="color2">
-                        <input id="a2" type="radio" name="color" value="30" />
-                        <label htmlFor="a2"></label>
-                      </li>
-                      <li className="color3">
-                        <input id="a3" type="radio" name="color" value="30" />
-                        <label htmlFor="a3"></label>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+                
                 <div className="product-filter-item color filter-size">
                   <div className="color-name">
                     <span>Weight :</span>

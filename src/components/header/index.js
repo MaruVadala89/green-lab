@@ -172,10 +172,10 @@ class Header extends Component {
                         </span>
                         <div className="mini-btn">
                           <Link onClick={ClickHandler} to="/checkout" className="view-cart-btn s1">
-                            Checkout
+                            Comprar
                           </Link>
                           <Link onClick={ClickHandler} to="/cart" className="view-cart-btn">
-                            View Cart
+                            Carrito
                           </Link>
                         </div>
                       </div>
@@ -237,10 +237,10 @@ class Header extends Component {
                         </span>
                         <div className="mini-btn">
                           <Link onClick={ClickHandler} to="/checkout" className="view-cart-btn s1">
-                            Checkout
+                            Comprar
                           </Link>
                           <Link onClick={ClickHandler} to="/wishlist" className="view-cart-btn">
-                            View Wishlist
+                            Favoritos
                           </Link>
                         </div>
                       </div>

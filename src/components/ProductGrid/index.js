@@ -80,28 +80,10 @@ const ProductGrid = ({ products, addToCartProduct,addToWishListProduct }) => {
                     <div className="product-price">
                       <ul>
                         <li>${product.price}</li>
-                        <li>${product.delPrice}</li>
+                        <li>{product.delPrice}</li>
                       </ul>
                     </div>
-                    <div className="product-ratting">
-                      <ul>
-                        <li>
-                          <i className="fa fa-star" aria-hidden="true"></i>
-                        </li>
-                        <li>
-                          <i className="fa fa-star" aria-hidden="true"></i>
-                        </li>
-                        <li>
-                          <i className="fa fa-star" aria-hidden="true"></i>
-                        </li>
-                        <li>
-                          <i className="fa fa-star" aria-hidden="true"></i>
-                        </li>
-                        <li>
-                          <i className="fa fa-star" aria-hidden="true"></i>
-                        </li>
-                      </ul>
-                    </div>
+                    
                   </div>
                 </div>
               </div>

@@ -13,11 +13,11 @@ const CheckWrap = (props) => {
     const push = useNavigate()
 
     const [value, setValue] = useState({
-        email: 'user@gmail.com',
-        password: '123456',
-        card_holder: 'Jhon Doe',
-        card_number: '589622144',
-        cvv: '856226',
+        email: 'Ingresa tu email',
+        password: 'Ingresa tu contraseña',
+        card_holder: '',
+        card_number: '',
+        cvv: 'Código',
         expire_date: '',
         remember: false,
     });
@@ -72,7 +72,7 @@ const CheckWrap = (props) => {
                         <Grid item sm={6} xs={12}>
                             <TextField
                                 fullWidth
-                                label="Card holder Name"
+                                label="Nombre de la tarjeta"
                                 name="card_holder"
                                 value={value.card_holder}
                                 onChange={(e) => changeHandler(e)}
@@ -86,7 +86,7 @@ const CheckWrap = (props) => {
                         <Grid item sm={6} xs={12}>
                             <TextField
                                 fullWidth
-                                label="Card Number"
+                                label="Numero de la tarjeta"
                                 name="card_number"
                                 value={value.card_number}
                                 onChange={(e) => changeHandler(e)}
@@ -114,7 +114,7 @@ const CheckWrap = (props) => {
                         <Grid item sm={6} xs={12}>
                             <TextField
                                 fullWidth
-                                label="Expire Date"
+                                label="Vencimiento"
                                 name="expire_date"
                                 value={value.expire_date}
                                 onChange={(e) => changeHandler(e)}
@@ -127,7 +127,7 @@ const CheckWrap = (props) => {
                         </Grid>
                         <Grid item xs={12}>
                             <Grid className="formFooter mt-20">
-                                <Button fullWidth className="cBtn cBtnLarge cBtnTheme mt-20 ml-15" type="submit">Proceed to Checkout</Button>
+                                <Button fullWidth className="cBtn cBtnLarge cBtnTheme mt-20 ml-15" type="submit">Termina tu compra</Button>
                             </Grid>
                         </Grid>
                     </Grid>

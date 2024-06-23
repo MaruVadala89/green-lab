@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
 import DefaultModal from "../Modal";
 
 const ProductList = ({ products, addToCartProduct,addToWishListProduct }) => {
@@ -25,7 +24,7 @@ const ProductList = ({ products, addToCartProduct,addToWishListProduct }) => {
         <div className="product-wrap">
           <div className="row align-items-center">
             {products.length > 0 &&
-              products.slice(0,6).map((product, pitem) => (
+              products.slice(0,18).map((product, pitem) => (
                 <div className="col-xl-12 col-12" key={pitem}>
                     <div className="product-item">
                       <div className="product-img">
@@ -34,7 +33,7 @@ const ProductList = ({ products, addToCartProduct,addToWishListProduct }) => {
                           <li>
                             <button
                               data-bs-toggle="tooltip"
-                              data-bs-html="true"
+                              data-bs-html="true"npm
                               title="Add to Cart"
                               onClick={() => addToCartProduct(product)}
                             >
@@ -73,38 +72,21 @@ const ProductList = ({ products, addToCartProduct,addToWishListProduct }) => {
                           </Link>
                         </h3>
                         <div className="product-btm">
-                          <div className="product-price">
-                            <ul>
-                              <li>${product.price}</li>
-                              <li>${product.delPrice}</li>
-                            </ul>
-                          </div>
-                          <div className="product-ratting">
-                            <ul>
-                              <li>
-                                <i className="fa fa-star" aria-hidden="true"></i>
-                              </li>
-                              <li>
-                                <i className="fa fa-star" aria-hidden="true"></i>
-                              </li>
-                              <li>
-                                <i className="fa fa-star" aria-hidden="true"></i>
-                              </li>
-                              <li>
-                                <i className="fa fa-star" aria-hidden="true"></i>
-                              </li>
-                              <li>
-                                <i className="fa fa-star" aria-hidden="true"></i>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam consequuntur laudantium quod ratione nulla modi? Repudiandae quidem dicta quia eveniet dignissimos.</p>
-                      </div>
+                        <div className="product-price">
+                      <ul>
+                        <li>${product.price}</li>
+                        {product.delPrice && <li>{product.delPrice}</li>}
+                      </ul>
                     </div>
                   </div>
-              ))}
-          </div>
+                  {product.description.split('\n').map((line, index) => (
+                    <p key={index}>{line}</p>  
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
           <DefaultModal
             addToCartProduct={addToCartProduct}
             open={open}

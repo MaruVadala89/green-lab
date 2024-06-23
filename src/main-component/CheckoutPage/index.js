@@ -11,7 +11,7 @@ const CheckoutPage =({cartList}) => {
     return(
         <Fragment>
             <Navbar hClass={"header-style-2"} />
-            <PageTitle pageTitle={'Checkout'} pagesub={'Checkout'}/> 
+            <PageTitle pageTitle={'Terminá tu compra'} pagesub={'Terminá tu compra'}/> 
             <CheckoutSection cartList={cartList}/>
             <Footer/>
             <Scrollbar/>

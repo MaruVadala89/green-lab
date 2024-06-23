@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 import Grid from "@material-ui/core/Grid";
 import Collapse from "@material-ui/core/Collapse";
 import FontAwesome from "../../components/UiStyle/FontAwesome";
@@ -16,8 +16,8 @@ import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableRow from "@material-ui/core/TableRow";
 import TableCell from "@material-ui/core/TableCell";
-import {Link} from 'react-router-dom'
-import {totalPrice} from "../../utils";
+import { Link } from 'react-router-dom'
+import { totalPrice } from "../../utils";
 
 // images
 import visa from '../../images/icon/visa.png';
@@ -49,7 +49,7 @@ const cardType = [
 ];
 
 
-const CheckoutSection = ({cartList}) => {
+const CheckoutSection = ({ cartList }) => {
     // states
     const [tabs, setExpanded] = React.useState({
         cupon: false,
@@ -99,7 +99,7 @@ const CheckoutSection = ({cartList}) => {
 
     // forms handler
     const changeHandler = e => {
-        setForms({...forms, [e.target.name]: e.target.value})
+        setForms({ ...forms, [e.target.name]: e.target.value })
     };
 
 
@@ -109,34 +109,13 @@ const CheckoutSection = ({cartList}) => {
                 <Grid className="container" container spacing={3}>
                     <Grid item md={6} xs={12}>
                         <div className="check-form-area">
-                            <Grid className="cuponWrap checkoutCard">
-                                <Button className="collapseBtn" fullWidth onClick={() => faqHandler('cupon')}>
-                                    Have a coupon ? Click here to enter your code.
-                                    <FontAwesome name={tabs.cupon ? 'minus' : 'plus'}/>
-                                </Button>
-                                <Collapse in={tabs.cupon} timeout="auto"
-                                        unmountOnExit>
-                                    <Grid className="chCardBody">
-                                        <p>If you have coupon code,please apply it</p>
-                                        <form className="cuponForm">
-                                            <TextField
-                                                fullWidth
-                                                type="text"
-                                                className="formInput radiusNone"
-                                                value={forms.cupon_key}
-                                                name="cupon_key"
-                                                onChange={(e) => changeHandler(e)}
-                                            />
-                                            <Button className="cBtn cBtnBlack">Apply</Button>
-                                        </form>
-                                    </Grid>
-                                </Collapse>
-                            </Grid>
+
                             <Grid className="cuponWrap checkoutCard">
                                 <Button className="collapseBtn" fullWidth onClick={() => faqHandler('billing_adress')}>
-                                    Billing Address
-                                    <FontAwesome name={tabs.billing_adress ? 'minus' : 'plus'}/>
+                                    Dirección
+                                    <FontAwesome name={tabs.billing_adress ? 'minus' : 'plus'} />
                                 </Button>
+
                                 <Collapse in={tabs.billing_adress} timeout="auto" unmountOnExit>
                                     <Grid className="chCardBody">
                                         <form className="cuponForm">
@@ -144,7 +123,7 @@ const CheckoutSection = ({cartList}) => {
                                                 <Grid item sm={6} xs={12}>
                                                     <TextField
                                                         fullWidth
-                                                        label="First Name"
+                                                        label="Nombre"
                                                         name="fname"
                                                         value={forms.fname}
                                                         onChange={(e) => changeHandler(e)}
@@ -155,10 +134,11 @@ const CheckoutSection = ({cartList}) => {
                                                         className="formInput radiusNone"
                                                     />
                                                 </Grid>
+
                                                 <Grid item sm={6} xs={12}>
                                                     <TextField
                                                         fullWidth
-                                                        label="Last Name"
+                                                        label="Apellido"
                                                         name="lname"
                                                         value={forms.lname}
                                                         onChange={(e) => changeHandler(e)}
@@ -169,29 +149,11 @@ const CheckoutSection = ({cartList}) => {
                                                         className="formInput radiusNone"
                                                     />
                                                 </Grid>
-                                                <Grid item sm={6} xs={12}>
-                                                    <InputLabel id="demo-simple-select-filled-label">Age</InputLabel>
-                                                    <FormControl className="formSelect" fullWidth variant="filled">
-                                                        <Select
-                                                            labelId="demo-simple-select-filled-label"
-                                                            id="demo-simple-select-filled"
-                                                            value={forms.country}
-                                                            name="country"
-                                                            onChange={(e) => changeHandler(e)}
-                                                        >
-                                                            <MenuItem value="">
-                                                                <em>None</em>
-                                                            </MenuItem>
-                                                            <MenuItem value={10}>Ten</MenuItem>
-                                                            <MenuItem value={20}>Twenty</MenuItem>
-                                                            <MenuItem value={30}>Thirty</MenuItem>
-                                                        </Select>
-                                                    </FormControl>
-                                                </Grid>
+                                                
                                                 <Grid item sm={6} xs={12}>
                                                     <TextField
                                                         fullWidth
-                                                        label="Dristrict"
+                                                        label="Ciudad"
                                                         name="dristrict"
                                                         value={forms.dristrict}
                                                         onChange={(e) => changeHandler(e)}
@@ -207,7 +169,7 @@ const CheckoutSection = ({cartList}) => {
                                                         fullWidth
                                                         multiline
                                                         rows="3"
-                                                        label="Address"
+                                                        label="Dirección"
                                                         name="address"
                                                         value={forms.address}
                                                         onChange={(e) => changeHandler(e)}
@@ -221,7 +183,7 @@ const CheckoutSection = ({cartList}) => {
                                                 <Grid item sm={6} xs={12}>
                                                     <TextField
                                                         fullWidth
-                                                        label="Post Code"
+                                                        label="Codigo postal"
                                                         name="post_code"
                                                         value={forms.post_code}
                                                         onChange={(e) => changeHandler(e)}
@@ -232,6 +194,8 @@ const CheckoutSection = ({cartList}) => {
                                                         className="formInput radiusNone"
                                                     />
                                                 </Grid>
+
+
                                                 <Grid item sm={6} xs={12}>
                                                     <TextField
                                                         fullWidth
@@ -249,7 +213,7 @@ const CheckoutSection = ({cartList}) => {
                                                 <Grid item xs={12}>
                                                     <TextField
                                                         fullWidth
-                                                        label="Phone No"
+                                                        label="Telefono"
                                                         name="phone"
                                                         value={forms.phone}
                                                         onChange={(e) => changeHandler(e)}
@@ -271,16 +235,17 @@ const CheckoutSection = ({cartList}) => {
                                                                 color="primary"
                                                             />
                                                         }
-                                                        label="Ship to a different address?"
+                                                        label="¿Lo mandamos a otra direccion?"
                                                     />
                                                 </Grid>
+
                                                 <Grid item xs={12}>
                                                     <Collapse in={dif_ship} timeout="auto" unmountOnExit>
                                                         <Grid container spacing={3}>
                                                             <Grid item sm={6} xs={12}>
                                                                 <TextField
                                                                     fullWidth
-                                                                    label="First Name"
+                                                                    label="Nombre"
                                                                     name="fname2"
                                                                     value={forms.fname2}
                                                                     onChange={(e) => changeHandler(e)}
@@ -294,7 +259,7 @@ const CheckoutSection = ({cartList}) => {
                                                             <Grid item sm={6} xs={12}>
                                                                 <TextField
                                                                     fullWidth
-                                                                    label="Last Name"
+                                                                    label="Apellido"
                                                                     name="lname2"
                                                                     value={forms.lname2}
                                                                     onChange={(e) => changeHandler(e)}
@@ -305,31 +270,11 @@ const CheckoutSection = ({cartList}) => {
                                                                     className="formInput radiusNone"
                                                                 />
                                                             </Grid>
-                                                            <Grid item sm={6} xs={12}>
-                                                                <InputLabel
-                                                                    id="demo-simple-select-filled-label">Age</InputLabel>
-                                                                <FormControl className="formSelect" fullWidth
-                                                                            variant="filled">
-                                                                    <Select
-                                                                        labelId="demo-simple-select-filled-label"
-                                                                        id="demo-simple-select-filled"
-                                                                        value={forms.country2}
-                                                                        name="country2"
-                                                                        onChange={(e) => changeHandler(e)}
-                                                                    >
-                                                                        <MenuItem value="">
-                                                                            <em>None</em>
-                                                                        </MenuItem>
-                                                                        <MenuItem value={10}>Ten</MenuItem>
-                                                                        <MenuItem value={20}>Twenty</MenuItem>
-                                                                        <MenuItem value={30}>Thirty</MenuItem>
-                                                                    </Select>
-                                                                </FormControl>
-                                                            </Grid>
+                                                
                                                             <Grid item sm={6} xs={12}>
                                                                 <TextField
                                                                     fullWidth
-                                                                    label="Dristrict"
+                                                                    label="Ciudad"
                                                                     name="dristrict2"
                                                                     value={forms.dristrict2}
                                                                     onChange={(e) => changeHandler(e)}
@@ -345,7 +290,7 @@ const CheckoutSection = ({cartList}) => {
                                                                     fullWidth
                                                                     multiline
                                                                     rows="3"
-                                                                    label="Address"
+                                                                    label="Dirección"
                                                                     name="address2"
                                                                     value={forms.address2}
                                                                     onChange={(e) => changeHandler(e)}
@@ -359,7 +304,7 @@ const CheckoutSection = ({cartList}) => {
                                                             <Grid item sm={6} xs={12}>
                                                                 <TextField
                                                                     fullWidth
-                                                                    label="Post Code"
+                                                                    label="Codigo postal"
                                                                     name="post_code2"
                                                                     value={forms.post_code2}
                                                                     onChange={(e) => changeHandler(e)}
@@ -373,7 +318,7 @@ const CheckoutSection = ({cartList}) => {
                                                             <Grid item sm={6} xs={12}>
                                                                 <TextField
                                                                     fullWidth
-                                                                    label="Email Adress"
+                                                                    label="Email"
                                                                     name="email2"
                                                                     value={forms.email2}
                                                                     onChange={(e) => changeHandler(e)}
@@ -387,7 +332,7 @@ const CheckoutSection = ({cartList}) => {
                                                             <Grid item xs={12}>
                                                                 <TextField
                                                                     fullWidth
-                                                                    label="Phone No"
+                                                                    label="Telefono"
                                                                     name="phone2"
                                                                     value={forms.phone2}
                                                                     onChange={(e) => changeHandler(e)}
@@ -405,9 +350,8 @@ const CheckoutSection = ({cartList}) => {
                                                     <TextField
                                                         fullWidth
                                                         multiline
-                                                        label="Order Notes"
-                                                        placeholder="Note about your order"
-                                                        name="note"
+                                                        label="Otras notas"
+                                                        placeholder="¿Alguna aclaración de tu pedido?"
                                                         value={forms.note}
                                                         onChange={(e) => changeHandler(e)}
                                                         type="text"
@@ -424,20 +368,20 @@ const CheckoutSection = ({cartList}) => {
                             </Grid>
                             <Grid className="cuponWrap checkoutCard">
                                 <Button className="collapseBtn" fullWidth onClick={() => faqHandler('payment')}>
-                                    Payment Method
-                                    <FontAwesome name={tabs.payment ? 'minus' : 'plus'}/>
+                                    Formas de pago
+                                    <FontAwesome name={tabs.payment ? 'minus' : 'plus'} />
                                 </Button>
                                 <Grid className="chCardBody">
                                     <Collapse in={tabs.payment} timeout="auto">
                                         <RadioGroup className="paymentMethod" aria-label="Payment Method"
-                                                    name="payment_method"
-                                                    value={forms.payment_method}
-                                                    onChange={(e) => changeHandler(e)}>
-                                            <FormControlLabel value="cash" control={<Radio color="primary"/>}
-                                                    label="Payment By Card "/>
-                                            <FormControlLabel value="card" control={<Radio color="primary"/>}
-                                                            label="Cash On delivery"/>
-                                            
+                                            name="payment_method"
+                                            value={forms.payment_method}
+                                            onChange={(e) => changeHandler(e)}>
+                                            <FormControlLabel value="cash" control={<Radio color="primary" />}
+                                                label="Tarjeta " />
+                                            <FormControlLabel value="card" control={<Radio color="primary" />}
+                                                label="Efectivo" />
+
                                         </RadioGroup>
                                         <Collapse in={forms.payment_method === 'cash'} timeout="auto">
                                             <Grid className="cardType">
@@ -445,18 +389,18 @@ const CheckoutSection = ({cartList}) => {
                                                     <Grid
                                                         key={i}
                                                         className={`cardItem ${forms.card_type === item.title ? 'active' : null}`}
-                                                        onClick={() => setForms({...forms, card_type: item.title})}>
-                                                        <img src={item.img} alt={item.title}/>
+                                                        onClick={() => setForms({ ...forms, card_type: item.title })}>
+                                                        <img src={item.img} alt={item.title} />
                                                     </Grid>
                                                 ))}
                                             </Grid>
                                             <Grid>
-                                                <CheckWrap/>
+                                                <CheckWrap />
                                             </Grid>
                                         </Collapse>
                                         <Collapse in={forms.payment_method === 'card'} timeout="auto">
                                             <Grid className="cardType">
-                                                <Link to='/order_received' className="cBtn cBtnLarge cBtnTheme mt-20 ml-15" type="submit">Proceed to Checkout</Link>
+                                                <Link to='/order_received' className="cBtn cBtnLarge cBtnTheme mt-20 ml-15" type="submit">Termina tu compra</Link>
                                             </Grid>
                                         </Collapse>
                                     </Collapse>
@@ -469,7 +413,7 @@ const CheckoutSection = ({cartList}) => {
                             <Grid container spacing={3}>
                                 <Grid item xs={12}>
                                     <Grid className="cartTotals">
-                                        <h4>Cart Total</h4>
+                                        <h4>Carrito</h4>
                                         <Table>
                                             <TableBody>
                                                 {cartList.map(item => (
@@ -480,15 +424,11 @@ const CheckoutSection = ({cartList}) => {
                                                     </TableRow>
                                                 ))}
                                                 <TableRow className="totalProduct">
-                                                    <TableCell>Total product</TableCell>
+                                                    <TableCell>Total de productos</TableCell>
                                                     <TableCell align="right">{cartList.length}</TableCell>
                                                 </TableRow>
                                                 <TableRow>
-                                                    <TableCell>Sub Price</TableCell>
-                                                    <TableCell align="right">${totalPrice(cartList)}</TableCell>
-                                                </TableRow>
-                                                <TableRow>
-                                                    <TableCell>Total Price</TableCell>
+                                                    <TableCell>Precio total</TableCell>
                                                     <TableCell
                                                         align="right">${totalPrice(cartList)}</TableCell>
                                                 </TableRow>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import Homepage2 from '../HomePage2'
+import AboutPage from '../AboutPage'
 import ShopPage from '../ShopPage'
 import ProductDetailsPage from '../ProductDetailsPage'
 import CheckoutPage from '../CheckoutPage'
@@ -24,6 +25,7 @@ const AllRoute = () => {
         <Routes>
           <Route exact path='/' element={<Homepage2 />} />
           <Route path='/shop' element={<ShopPage />} />
+          <Route path='/about' element={<AboutPage />} />
           <Route path='/product-single/:id' element={<ProductDetailsPage />} />
           <Route path='/checkout' element={<CheckoutPage />} />
           <Route path='/order_received' element={<OrderRecived />} />
