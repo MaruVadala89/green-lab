@@ -1,28 +1,15 @@
 import React from "react";
 
 const prices = [
-  {
-    id: 1,
-    min: 500,
-    max: 3000,
-  },
-  {
-    id: 2,
-    min: 3050,
-    max: 6000,
-  },
-  {
-    id: 3,
-    min: 6050,
-    max: null,
-  },
+  { id: 1, min: 500, max: 3000 },
+  { id: 2, min: 3050, max: 6000 },
+  { id: 3, min: 6050, max: null },
 ];
 
 const categories = ["Plantas", "Arboles", "Flores"];
 const clases = ["Interior", "Exterior"];
 
-
-const FilterSidebar = ({ filter, changeHandler, priceChangeHandler }) => {
+const FilterSidebar = ({ filter, changeHandler, priceChangeHandler, searchQuery, setSearchQuery }) => {
   return (
     <div className="col-lg-4">
       <div className="shop-filter-wrap">
@@ -36,8 +23,10 @@ const FilterSidebar = ({ filter, changeHandler, priceChangeHandler }) => {
                     type="text"
                     className="form-control"
                     placeholder="Buscar"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
                   />
-                  <button type="submit">
+                  <button type="submit" onClick={(e) => e.preventDefault()}>
                     <i className="ti-search"></i>
                   </button>
                 </div>
@@ -45,6 +34,7 @@ const FilterSidebar = ({ filter, changeHandler, priceChangeHandler }) => {
             </div>
           </div>
         </div>
+
         <div className="filter-item">
           <div className="shop-filter-item">
             <h2>Precio</h2>
@@ -54,7 +44,7 @@ const FilterSidebar = ({ filter, changeHandler, priceChangeHandler }) => {
                   Todos los precios
                   <input
                     type="radio"
-                    value={""}
+                    value=""
                     checked={!filter.price}
                     name="price"
                     onChange={changeHandler}
@@ -63,12 +53,12 @@ const FilterSidebar = ({ filter, changeHandler, priceChangeHandler }) => {
                 </label>
               </li>
               {prices.map((price) => (
-                <li>
+                <li key={price.id}>
                   <label className="topcoat-radio-button__label">
                     ${price.min} {price.max ? "- $" : ""}
                     {price.max || " and more"}
                     <input
-                      checked={filter.price.id === price.id}
+                      checked={filter.price && filter.price.id === price.id}
                       type="radio"
                       value={JSON.stringify(price)}
                       onChange={priceChangeHandler}
@@ -100,7 +90,7 @@ const FilterSidebar = ({ filter, changeHandler, priceChangeHandler }) => {
                 </label>
               </li>
               {categories.map((category) => (
-                <li>
+                <li key={category}>
                   <label className="topcoat-radio-button__label">
                     {category}
                     <input
@@ -118,7 +108,6 @@ const FilterSidebar = ({ filter, changeHandler, priceChangeHandler }) => {
           </div>
         </div>
 
-        
         <div className="filter-item">
           <div className="shop-filter-item">
             <h2>Plantas de interior/exterior</h2>
@@ -137,7 +126,7 @@ const FilterSidebar = ({ filter, changeHandler, priceChangeHandler }) => {
                 </label>
               </li>
               {clases.map((clase) => (
-                <li>
+                <li key={clase}>
                   <label className="topcoat-radio-button__label">
                     {clase}
                     <input

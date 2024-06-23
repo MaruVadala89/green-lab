@@ -17,6 +17,7 @@ const ShopPage = ({ addToCart, addToWishList }) => {
     category: "",
     clase: "",
   });
+  const [searchQuery, setSearchQuery] = useState("");
 
   const priceChangeHandler = ({ target: { name, value } }) => {
     const val = typeof value === "string" ? JSON.parse(value) : value;
@@ -46,7 +47,8 @@ const ShopPage = ({ addToCart, addToWishList }) => {
   const products = productsArray
     .filter((el) => priceFIlter(el.price))
     .filter((el) => (filter.category ? el.category === filter.category : true))
-    .filter((el) => (filter.clase ? el.clase === filter.clase : true));
+    .filter((el) => (filter.clase ? el.clase === filter.clase : true))
+    .filter((el) => el.title.toLowerCase().includes(searchQuery.toLowerCase()));
 
   const addToWishListProduct = (products) => {
     addToWishList(products);
@@ -61,11 +63,12 @@ const ShopPage = ({ addToCart, addToWishList }) => {
       <div className="shop-section">
         <div className="container">
           <div className="row">
-
             <FilterSidebar
               filter={filter}
               priceChangeHandler={priceChangeHandler}
               changeHandler={changeHandler}
+              searchQuery={searchQuery}
+              setSearchQuery={setSearchQuery}
             />
             <FilterAllProduct
               addToCartProduct={addToCartProduct}

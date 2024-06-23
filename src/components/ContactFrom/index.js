@@ -5,10 +5,10 @@ class ContactForm extends Component {
 
 
     state = {
-        name: '',
-        email: '',
-        subject: '',
-        lastname: '',
+        Nombre: '',
+        Email: '',
+        Asunto: '',
+        Apellido: '',
         events: '',
         notes: '',
         error: {}
@@ -17,10 +17,10 @@ class ContactForm extends Component {
 
     changeHandler = (e) => {
         const error = this.state.error;
-        error[e.target.name] = ''
+        error[e.target.Nombre] = ''
 
         this.setState({
-            [e.target.name]: e.target.value,
+            [e.target.Nombre]: e.target.value,
             error
         })
     }
@@ -28,24 +28,24 @@ class ContactForm extends Component {
     subimtHandler = (e) => {
         e.preventDefault();
 
-        const { name,
-            email,
-            subject,
-            lastname,
+        const { Nombre,
+            Email,
+            Asunto,
+            Apellido,
             events,
             notes, error } = this.state;
 
-        if (name === '') {
-            error.name = "Please enter your name";
+        if (Nombre === '') {
+            error.Nombre = "Escribí tu nombre";
         }
-        if (email === '') {
-            error.email = "Please enter your email";
+        if (Email === '') {
+            error.Email = "Escribí tu email";
         }
-        if (subject === '') {
-            error.subject = "Please enter your subject";
+        if (Asunto === '') {
+            error.Asunto = "Asunto";
         }
-        if (lastname === '') {
-            error.lastname = "Please enter your Lastname";
+        if (Apellido === '') {
+            error.Apellido = "Escribi tu apellido";
         }
         if (events === '') {
             error.events = "Select your event list";
@@ -60,11 +60,11 @@ class ContactForm extends Component {
                 error
             })
         }
-        if (error.name === '' && error.email === '' && error.email === '' && error.lastname === '' && error.subject === '' && error.events === '' && error.notes === '') {
+        if (error.Nombre === '' && error.Email === '' && error.Email === '' && error.Apellido === '' && error.Asunto === '' && error.events === '' && error.notes === '') {
             this.setState({
-                name: '',
-                email: '',
-                subject: '',
+                Nombre: '',
+                Email: '',
+                Asunto: '',
                 events: '',
                 notes: '',
                 error: {}
@@ -72,48 +72,48 @@ class ContactForm extends Component {
         }
     }
 
-    render(){
-        const { name,
-            email,
-            subject,
-            lastname,
+    render() {
+        const { Nombre,
+            Email,
+            Asunto,
+            Apellido,
             error } = this.state;
 
-        return(
+        return (
             <form onSubmit={this.subimtHandler} className="form">
                 <div className="row">
                     <div className="col-lg-6 col-md-6 col-12">
                         <div className="form-field">
-                            <input value={name} onChange={this.changeHandler} type="text" name="name" placeholder="Name"/>
-                            <p>{error.name ? error.name : ''}</p>
+                            <input value={Nombre} onChange={this.changeHandler} type="text" Nombre="Nombre" placeholder="Nombre" />
+                            <p>{error.Nombre ? error.Nombre : ''}</p>
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-12">
                         <div className="form-field">
-                            <input value={lastname} onChange={this.changeHandler} type="text" name="lastname" placeholder="Lastname"/>
-                            <p>{error.lastname ? error.lastname : ''}</p>
+                            <input value={Apellido} onChange={this.changeHandler} type="text" Nombre="Apellido" placeholder="Apellido" />
+                            <p>{error.Apellido ? error.Apellido : ''}</p>
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-12">
                         <div className="form-field">
-                            <input onChange={this.changeHandler} value={email} type="email" name="email" placeholder="Email"/>
+                            <input onChange={this.changeHandler} value={Email} type="email" Nombre="Email" placeholder="Email" />
                             <p>{error.email ? error.email : ''}</p>
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-12">
                         <div className="form-field">
-                            <input onChange={this.changeHandler} value={subject} type="text" name="subject" placeholder="Subject"/>
+                            <input onChange={this.changeHandler} value={Asunto} type="text" Nombre="Asunto" placeholder="Asunto" />
                             <p>{error.subject ? error.subject : ''}</p>
                         </div>
                     </div>
                     <div className="col-lg-12">
                         <div className="form-field">
-                            <textarea name="message" placeholder="Message"></textarea>
+                            <textarea name="Mensaje" placeholder="Mensaje"></textarea>
                         </div>
                     </div>
                     <div className="col-lg-12">
                         <div className="form-submit">
-                            <button type="submit" className="theme-btn">Send Message</button>
+                            <button type="submit" className="theme-btn">Enviar mensaje</button>
                         </div>
                     </div>
                 </div>
@@ -122,4 +122,4 @@ class ContactForm extends Component {
     }
 
 }
-export default  ContactForm;
+export default ContactForm;

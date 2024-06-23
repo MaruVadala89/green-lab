@@ -24,7 +24,7 @@ const CartPage = (props) => {
   return (
     <Fragment>
       <Navbar hClass={"header-style-2"} />
-      <PageTitle pageTitle={"Cart"} pagesub={"Cart"} />
+      <PageTitle pageTitle={"Carrito"} pagesub={"Carrito"} />
       <div className="cart-area section-padding">
         <div className="container">
           <div className="form">
@@ -35,12 +35,12 @@ const CartPage = (props) => {
                     <table className="table-responsive cart-wrap">
                       <thead>
                         <tr>
-                          <th className="images images-b">Image</th>
-                          <th className="product-2">Product Name</th>
-                          <th className="pr">Quantity</th>
-                          <th className="ptice">Price</th>
-                          <th className="stock">Total Price</th>
-                          <th className="remove remove-b">Action</th>
+                          <th className="images images-b">Imagen</th>
+                          <th className="product-2">Producto</th>
+                          <th className="pr">Cantidad</th>
+                          <th className="ptice">Precio</th>
+                          <th className="stock">Total:</th>
+                          <th className="remove remove-b">Acción</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -110,34 +110,22 @@ const CartPage = (props) => {
                           className="theme-btn"
                           to="/shop"
                         >
-                          Continue Shopping{" "}
+                          Continuar comprando{" "}
                           <i className="fa fa-angle-double-right"></i>
                         </Link>
                       </li>
                       <li>
-                        <button type="submit">Update Cart</button>
+                        <button type="submit">Carrito</button>
                       </li>
                     </ul>
                   </div>
                   <div className="cart-product-list">
                     <ul>
                       <li>
-                        Total product<span>( {carts.length} )</span>
-                      </li>
-                      <li>
-                        Sub Price<span>${totalPrice(carts)}</span>
-                      </li>
-                      <li>
-                        Vat<span>$0</span>
-                      </li>
-                      <li>
-                        Eco Tax<span>$0</span>
-                      </li>
-                      <li>
-                        Delivery Charge<span>$0</span>
+                        Total de productos<span>( {carts.length} )</span>
                       </li>
                       <li className="cart-b">
-                        Total Price<span>${totalPrice(carts)}</span>
+                        Precio total:<span>${totalPrice(carts)}</span>
                       </li>
                     </ul>
                   </div>
@@ -149,7 +137,7 @@ const CartPage = (props) => {
                           className="theme-btn"
                           to="/checkout"
                         >
-                          Proceed to Checkout{" "}
+                          Termina tu compra{" "}
                           <i className="fa fa-angle-double-right"></i>
                         </Link>
                       </li>

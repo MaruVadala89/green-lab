@@ -14,7 +14,7 @@ const WishlistPage = (props) => {
   return (
     <Fragment>
       <Navbar hClass={"header-style-2"} />
-      <PageTitle pageTitle={"Wishlist"} pagesub={"Wishlist"} />
+      <PageTitle pageTitle={"Favoritos"} pagesub={"Favoritos"} />
       <div className="cart-area section-padding">
         <div className="container">
           <div className="form">
@@ -25,11 +25,11 @@ const WishlistPage = (props) => {
                     <table className="table-responsive cart-wrap">
                       <thead>
                         <tr>
-                          <th className="images images-b">Image</th>
-                          <th className="product-2">Product Name</th>
-                          <th className="ptice">Price</th>
-                          <th className="pr">Stock Status</th>
-                          <th className="remove remove-b">Action</th>
+                          <th className="images images-b">Imagen</th>
+                          <th className="product-2">Producto</th>
+                          <th className="ptice">Precio</th>
+                          <th className="pr">Stock</th>
+                          <th className="remove remove-b">Acción</th>
                         </tr>
                       </thead>
                       <tbody>

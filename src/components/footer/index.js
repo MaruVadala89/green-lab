@@ -44,8 +44,8 @@ const Footer = (props) =>{
                             <ul>
                                 <li><Link onClick={ClickHandler} to="/cart">Carrito</Link></li>
                                 <li><Link onClick={ClickHandler} to="/shop">Shop</Link></li>
-                                <li><Link onClick={ClickHandler} to="/wishlist">Preferidos</Link></li>
-                                <li><Link onClick={ClickHandler} to="/checkout">Termina tu compra</Link></li>
+                                <li><Link onClick={ClickHandler} to="/wishlist">Favoritos</Link></li>
+                                <li><Link onClick={ClickHandler} to="/checkout">Terminá tu compra</Link></li>
                             </ul>
                         </div>
                     </div>

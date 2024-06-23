@@ -6,10 +6,12 @@ import MobileMenu from "../../components/MobileMenu";
 import min3 from "../../images/shop/mini-cart/bee2.png";
 import { totalPrice } from "../../utils";
 import { removeFromCart, removeFromWishList } from "../../store/actions/action";
+
 class Header extends Component {
   state = {
     isCartShow: false,
     isWishlistShow: false,
+    isHovering: false, // Nuevo estado
   };
 
   cartHandler = () => {
@@ -23,23 +25,30 @@ class Header extends Component {
       isWishlistShow: !this.state.isWishlistShow,
     });
   };
+
   profileHandler = () => {
     this.setState({
       isprofileShow: !this.state.isprofileShow,
     });
   };
 
+  handleMouseEnter = () => {
+    this.setState({ isHovering: true });
+  };
+
+  handleMouseLeave = () => {
+    this.setState({ isHovering: false });
+  };
 
   render() {
-    const { isCartShow, isWishlistShow, isprofileShow } = this.state;
+    const { isCartShow, isWishlistShow, isprofileShow, isHovering } = this.state;
 
     const ClickHandler = () => {
       window.scrollTo(10, 0);
-    }
+    };
 
     const { carts } = this.props;
     const { wishs } = this.props;
-
 
     let totalwishlistprice = 0;
     if (wishs && wishs.length > 0) {
@@ -48,48 +57,50 @@ class Header extends Component {
       }
     }
 
-    console.log(totalPrice)
-
     return (
       <header id="header" className={`site-header ${this.props.hClass}`}>
-        
         <nav className="navigation navbar navbar-expand-lg">
           <div className="container">
             <div className="row">
               <div className="col-lg-3">
                 <div className="navbar-header">
                   <Link onClick={ClickHandler} className="navbar-brand" to="/home">
-                    <img src={Logo} alt="icon" /> 
+                    <img src={Logo} alt="icon" />
                   </Link>
                 </div>
               </div>
               <div className="col-lg-7">
-                <div
-                  id="navbar"
-                  className="collapse navbar-collapse navigation-holder"
-                >
+                <div id="navbar" className="collapse navbar-collapse navigation-holder">
                   <Link onClick={ClickHandler} className="menu-close" to="/">
                     <i className="fi flaticon-cancel"></i>
                   </Link>
 
                   <ul className="nav navbar-nav me-auto mb-2 mb-lg-0">
-
-                    <li>
-
-                      <Link onClick={ClickHandler} className="active" to="/">
+                    <li
+                      onMouseEnter={this.handleMouseEnter}
+                      onMouseLeave={this.handleMouseLeave}
+                    >
+                      <Link onClick={ClickHandler} to="/">
                         Inicio
                       </Link>
-
                     </li>
 
-
-                    <li>
-                      <Link onClick={ClickHandler} to="/shop">Shop</Link>
+                    <li
+                      onMouseEnter={this.handleMouseEnter}
+                      onMouseLeave={this.handleMouseLeave}
+                    >
+                      <Link onClick={ClickHandler} to="/shop">
+                        Shop
+                      </Link>
                     </li>
 
-            
-                    <li>
-                      <Link onClick={ClickHandler} to="/contact">Contacto</Link>
+                    <li
+                      onMouseEnter={this.handleMouseEnter}
+                      onMouseLeave={this.handleMouseLeave}
+                    >
+                      <Link onClick={ClickHandler} to="/contact">
+                        Contacto
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -101,20 +112,30 @@ class Header extends Component {
                       onClick={this.profileHandler}
                       className="profile-toggle-btn"
                     >
-                      <i className={`${isprofileShow ? 'fi ti-close' : 'fi flaticon-user'}`}></i>
+                      <i
+                        className={`${
+                          isprofileShow ? "fi ti-close" : "fi flaticon-user"
+                        }`}
+                      ></i>
                     </button>
                     <div
-                      className={`header-profile-content ${isprofileShow ? "header-profile-content-toggle" : ""
-                        }`}
+                      className={`header-profile-content ${
+                        isprofileShow
+                          ? "header-profile-content-toggle"
+                          : ""
+                      }`}
                     >
                       <ul>
                         <li>
-                          <Link onClick={ClickHandler} to="/login">Login</Link>
+                          <Link onClick={ClickHandler} to="/login">
+                            Login
+                          </Link>
                         </li>
                         <li>
-                          <Link onClick={ClickHandler} to="/register">Registrate</Link>
+                          <Link onClick={ClickHandler} to="/register">
+                            Registrate
+                          </Link>
                         </li>
-
                       </ul>
                     </div>
                   </div>
@@ -128,8 +149,9 @@ class Header extends Component {
                       <span className="cart-count">{carts.length}</span>
                     </button>
                     <div
-                      className={`mini-cart-content ${isCartShow ? "mini-cart-content-toggle" : ""
-                        }`}
+                      className={`mini-cart-content ${
+                        isCartShow ? "mini-cart-content-toggle" : ""
+                      }`}
                     >
                       <button
                         onClick={this.cartHandler}
@@ -179,9 +201,11 @@ class Header extends Component {
                           </Link>
                         </div>
                       </div>
-                      <div className="visible-icon">
-                        <img src={min3} alt="icon" />
-                      </div>
+                      {isHovering && (
+                        <div className="visible-icon">
+                          <img src={min3} alt="icon" />
+                        </div>
+                      )}
                     </div>
                   </div>
                   <div className="header-wishlist-form-wrapper">
@@ -193,8 +217,9 @@ class Header extends Component {
                       <span className="cart-count">{wishs.length}</span>{" "}
                     </button>
                     <div
-                      className={`mini-wislist-content ${isWishlistShow ? "mini-cart-content-toggle" : ""
-                        }`}
+                      className={`mini-wislist-content ${
+                        isWishlistShow ? "mini-cart-content-toggle" : ""
+                      }`}
                     >
                       <button
                         onClick={this.wishlistHandler}
@@ -244,9 +269,11 @@ class Header extends Component {
                           </Link>
                         </div>
                       </div>
-                      <div className="visible-icon">
-                        <img src={min3} alt="icon" />
-                      </div>
+                      {isHovering && (
+                        <div className="visible-icon">
+                          <img src={min3} alt="icon" />
+                        </div>
+                      )}
                     </div>
                   </div>
                   <MobileMenu />
@@ -266,6 +293,5 @@ const mapStateToProps = (state) => {
     wishs: state.wishList.w_list,
   };
 };
-
 
 export default connect(mapStateToProps, { removeFromCart, removeFromWishList })(Header);

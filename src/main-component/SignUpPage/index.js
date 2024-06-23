@@ -1,10 +1,13 @@
-import React, {useState} from 'react';
+import React, {useState, Fragment} from 'react';
 import Grid from "@material-ui/core/Grid";
 import SimpleReactValidator from "simple-react-validator";
 import {toast} from "react-toastify";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import {Link, useNavigate} from "react-router-dom";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/footer";
+import Scrollbar from "../../components/scrollbar";
 
 
 import './style.scss';
@@ -14,10 +17,10 @@ const SignUpPage = (props) => {
     const push = useNavigate()
 
     const [value, setValue] = useState({
-        email: '',
-        full_name: '',
-        password: '',
-        confirm_password: '',
+        Email: '',
+        Nombre_Completo: '',
+        Password: '',
+        Confirmá_password: '',
     });
 
     const changeHandler = (e) => {
@@ -34,52 +37,54 @@ const SignUpPage = (props) => {
         e.preventDefault();
         if (validator.allValid()) {
             setValue({
-                email: '',
-                full_name: '',
-                password: '',
-                confirm_password: '',
+                Email: '',
+                Nombre_Completo: '',
+                Password: '',
+                Confirmá_password: '',
             });
             validator.hideMessages();
-            toast.success('Registration Complete successfully!');
+            toast.success('Registro exitoso!');
             push('/login');
         } else {
             validator.showMessages();
-            toast.error('Empty field is not allowed!');
+            toast.error('Te quedan espacios vacios!');
         }
     };
     return (
+        <Fragment>
+      <Navbar hClass={"header-style-2"} />
         <Grid className="loginWrapper">
 
             <Grid className="loginForm">
-                <h2>Signup</h2>
-                <p>Signup your account</p>
+                <h2>Registrate</h2>
+                <p>Crea tu cuenta</p>
                 <form onSubmit={submitForm}>
                     <Grid container spacing={3}>
                         <Grid item xs={12}>
                             <TextField
                                 className="inputOutline"
                                 fullWidth
-                                placeholder="Full Name"
-                                value={value.full_name}
+                                placeholder="Nombre Completo"
+                                value={value.Nombre_Completo}
                                 variant="outlined"
-                                name="full_name"
-                                label="Name"
+                                name="Nombre_Completo"
+                                label="Nombre"
                                 InputLabelProps={{
                                     shrink: true,
                                 }}
                                 onBlur={(e) => changeHandler(e)}
                                 onChange={(e) => changeHandler(e)}
                             />
-                            {validator.message('full name', value.full_name, 'required|alpha')}
+                            {validator.message('full name', value.Nombre_Completo, 'required|alpha')}
                         </Grid>
                         <Grid item xs={12}>
                             <TextField
                                 className="inputOutline"
                                 fullWidth
                                 placeholder="E-mail"
-                                value={value.email}
+                                value={value.Email}
                                 variant="outlined"
-                                name="email"
+                                name="Email"
                                 label="E-mail"
                                 InputLabelProps={{
                                     shrink: true,
@@ -87,14 +92,14 @@ const SignUpPage = (props) => {
                                 onBlur={(e) => changeHandler(e)}
                                 onChange={(e) => changeHandler(e)}
                             />
-                            {validator.message('email', value.email, 'required|email')}
+                            {validator.message('email', value.Email, 'required|email')}
                         </Grid>
                         <Grid item xs={12}>
                             <TextField
                                 className="inputOutline"
                                 fullWidth
-                                placeholder="Password"
-                                value={value.password}
+                                placeholder="*******"
+                                value={value.Password}
                                 variant="outlined"
                                 name="password"
                                 label="Password"
@@ -104,45 +109,42 @@ const SignUpPage = (props) => {
                                 onBlur={(e) => changeHandler(e)}
                                 onChange={(e) => changeHandler(e)}
                             />
-                            {validator.message('password', value.password, 'required')}
+                            {validator.message('Password', value.Password, 'required')}
                         </Grid>
                         <Grid item xs={12}>
                             <TextField
                                 className="inputOutline"
                                 fullWidth
-                                placeholder="Confirm Password"
-                                value={value.password}
+                                placeholder="*******"
+                                value={value.Password}
                                 variant="outlined"
-                                name="confirm_password"
-                                label="Confirm Password"
+                                name="Confirmá_password"
+                                label="Confirmá tu Password"
                                 InputLabelProps={{
                                     shrink: true,
                                 }}
                                 onBlur={(e) => changeHandler(e)}
                                 onChange={(e) => changeHandler(e)}
                             />
-                            {validator.message('confirm password', value.confirm_password, `in:${value.password}`)}
+                            {validator.message('confirm password', value.Confirmá_password, `in:${value.Password}`)}
                         </Grid>
                         <Grid item xs={12}>
                             <Grid className="formFooter">
-                                <Button fullWidth className="cBtn cBtnLarge cBtnTheme" type="submit">Sign Up</Button>
+                                <Button fullWidth className="cBtn cBtnLarge cBtnTheme" type="submit">Registrate</Button>
                             </Grid>
-                            <Grid className="loginWithSocial">
-                                <Button className="facebook"><i className="fa fa-facebook"></i></Button>
-                                <Button className="twitter"><i className="fa fa-twitter"></i></Button>
-                                <Button className="linkedin"><i className="fa fa-linkedin"></i></Button>
-                            </Grid>
-                            <p className="noteHelp">Already have an account? <Link to="/login">Return to Sign In</Link>
+                        
+                            <p className="noteHelp">¿Ya tenes una cuenta? <Link to="/login">Inicia Sesión</Link>
                             </p>
                         </Grid>
                     </Grid>
                 </form>
-                <div className="shape-img">
-                    <i className="fi flaticon-honeycomb"></i>
-                </div>
+               
             </Grid>
         </Grid>
-    )
+        <Footer />
+        <Scrollbar/>
+        </Fragment>
+    );
 };
 
 export default SignUpPage;
