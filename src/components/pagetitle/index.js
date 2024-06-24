@@ -12,7 +12,6 @@ const PageTitle = (props) => {
                             <h2>{props.pageTitle}</h2>
                             <ul>
                                 <li><Link to="/">Inicio</Link></li>
-                                <li><span>{props.pagesub}</span></li>
                             </ul>
                         </div>
                     </div>

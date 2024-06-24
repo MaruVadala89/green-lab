@@ -10,7 +10,7 @@ const ContactPage =() => {
     return(
         <Fragment>
             <Navbar hClass={"header-style-2"} />
-            <PageTitle pageTitle={'Contactanos'} pagesub={'Contacto'}/> 
+            <PageTitle pageTitle={'Contactanos'}/> 
             <Contactpage/>
             <Footer/>
             <Scrollbar/>

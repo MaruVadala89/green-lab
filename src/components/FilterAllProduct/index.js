@@ -39,7 +39,7 @@ const FilterAllProduct = ({ products, addToCartProduct,addToWishListProduct }) =
           </Nav>
         </div>
         <div className="shoping-product">
-          <span>Showing Products 1 - 18 Of 18 Result</span>
+          <span>Todos los productos 1 - 18 de 18</span>
         </div>
       </div>
       <TabContent activeTab={activeTab}>

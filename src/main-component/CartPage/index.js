@@ -24,7 +24,7 @@ const CartPage = (props) => {
   return (
     <Fragment>
       <Navbar hClass={"header-style-2"} />
-      <PageTitle pageTitle={"Carrito"} pagesub={"Carrito"} />
+      <PageTitle pageTitle={"Carrito"} />
       <div className="cart-area section-padding">
         <div className="container">
           <div className="form">
@@ -56,8 +56,6 @@ const CartPage = (props) => {
                                   <li className="first-cart">
                                     {catItem.title}
                                   </li>
-                                  <li>Brand : {catItem.brand}</li>
-                                  <li>Size : {catItem.size}</li>
                                 </ul>
                               </td>
                               <td className="stock">

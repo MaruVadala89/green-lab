@@ -10,19 +10,14 @@ import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/footer";
 import Scrollbar from "../../components/scrollbar";
-
-
 import './style.scss';
 
-
-
 const LoginPage = (props) => {
-
-    const push = useNavigate()
+    const navigate = useNavigate();
 
     const [value, setValue] = useState({
-        email: 'user@gmail.com',
-        password: '123456',
+        email: '',
+        password: '',
         remember: false,
     });
 
@@ -39,34 +34,25 @@ const LoginPage = (props) => {
         className: 'errorMessage'
     }));
 
-
-
     const submitForm = (e) => {
         e.preventDefault();
         if (validator.allValid()) {
-            setValue({
-                email: '',
-                password: '',
-                remember: false
-            });
-            validator.hideMessages();
-
-            const userRegex = /^user+.*/gm;
-            const email = value.email;
-
-            if (email.match(userRegex)) {
-                toast.success('Te registraste a Greenlab !');
-                push('/home');
+            const storedUser = JSON.parse(localStorage.getItem('user'));
+            if (storedUser && storedUser.email === value.email && storedUser.password === value.password) {
+                toast.success('Inicio de sesión exitoso!');
+                navigate('/');  // Redirigir a la página de inicio
+            } else {
+                toast.error('Correo o contraseña incorrectos!');
             }
         } else {
             validator.showMessages();
             toast.error('No se permiten espacios vacios!');
         }
     };
+
     return (
         <Fragment>
             <Navbar hClass={"header-style-2"} />
-
             <Grid className="loginWrapper">
                 <Grid className="loginForm">
                     <h2>Inicia sesión</h2>
@@ -94,12 +80,12 @@ const LoginPage = (props) => {
                                 <TextField
                                     className="inputOutline"
                                     fullWidth
-                                    placeholder="Password"
+                                    placeholder="Contraseña"
                                     value={value.password}
                                     variant="outlined"
                                     name="password"
                                     type="password"
-                                    label="Password"
+                                    label="Contraseña"
                                     InputLabelProps={{
                                         shrink: true,
                                     }}
@@ -119,13 +105,10 @@ const LoginPage = (props) => {
                                 <Grid className="formFooter">
                                     <Button fullWidth className="cBtnTheme" type="submit">Inicia sesión</Button>
                                 </Grid>
-
-                                <p className="noteHelp">¿No tenes una cuenta? <Link to="/register">Registrate</Link>
-                                </p>
+                                <p className="noteHelp">¿No tenes una cuenta? <Link to="/register">Registrate</Link></p>
                             </Grid>
                         </Grid>
                     </form>
-
                 </Grid>
             </Grid>
             <Footer />
@@ -135,3 +118,5 @@ const LoginPage = (props) => {
 };
 
 export default LoginPage;
+
+

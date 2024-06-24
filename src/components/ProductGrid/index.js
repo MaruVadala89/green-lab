@@ -39,7 +39,7 @@ const ProductGrid = ({ products, addToCartProduct,addToWishListProduct }) => {
                       <button
                         data-bs-toggle="tooltip"
                         data-bs-html="true"
-                        title="Add to Cart"
+                        title="Agrega al carrito"
                         onClick={() => addToCartProduct(product)}
                       >
                         <i className="fi flaticon-shopping-cart"></i>
@@ -49,7 +49,7 @@ const ProductGrid = ({ products, addToCartProduct,addToWishListProduct }) => {
                         <button
                             data-bs-toggle="tooltip"
                             data-bs-html="true"
-                            title="Add to Cart"
+                            title="Mira la descripción"
                             onClick={() => handleClickOpen(product)}
                           >
                             <i className="fi ti-eye"></i>
@@ -59,7 +59,7 @@ const ProductGrid = ({ products, addToCartProduct,addToWishListProduct }) => {
                       <button
                           data-bs-toggle="tooltip"
                           data-bs-html="true"
-                          title="Add to Cart"
+                          title="Agrega a favoritos"
                           onClick={() => addToWishListProduct(product)}
                       >
                           <i className="fi flaticon-like"></i>

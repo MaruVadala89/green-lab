@@ -32,19 +32,19 @@ const ForgotPassword = (props) => {
                 email: '',
             });
             validator.hideMessages();
-            toast.success('You successfully Login!');
+            toast.success('Has iniciado sesión!');
             push('/login');
         } else {
             validator.showMessages();
-            toast.error('Empty field is not allowed!');
+            toast.error('Has dejado espacios vacios!');
         }
     };
     return (
         <Grid className="loginWrapper">
 
             <Grid className="loginForm">
-                <h2>Forgot Password</h2>
-                <p>Reset your account password</p>
+                <h2>¿Olvidaste tu contraseña?</h2>
+                <p>Crea una nueva</p>
                 <form onSubmit={submitForm}>
                     <Grid container spacing={3}>
                         <Grid item xs={12}>
@@ -62,26 +62,19 @@ const ForgotPassword = (props) => {
                                 onBlur={(e) => changeHandler(e)}
                                 onChange={(e) => changeHandler(e)}
                             />
-                            {validator.message('email', value.email, 'required|email')}
+                     
                         </Grid>
                         <Grid item xs={12}>
                             <Grid className="formFooter">
-                                <Button fullWidth className="cBtn cBtnLarge cBtnTheme" type="submit">Resend
-                                    Password</Button>
+                                <Button fullWidth className="cBtn cBtnLarge cBtnTheme" type="submit">Crea una nueva constraseña</Button>
                             </Grid>
-                            <Grid className="loginWithSocial">
-                                <Button className="facebook"><i className="fa fa-facebook"></i></Button>
-                                <Button className="twitter"><i className="fa fa-twitter"></i></Button>
-                                <Button className="linkedin"><i className="fa fa-linkedin"></i></Button>
-                            </Grid>
-                            <p className="noteHelp">Already have an account? <Link to="/login">Return to Sign In</Link>
+                            
+                            <p className="noteHelp">¿Tenes tu cuenta y clave? <Link to="/login">Incia sesión</Link>
                             </p>
                         </Grid>
                     </Grid>
                 </form>
-                <div className="shape-img">
-                    <i className="fi flaticon-honeycomb"></i>
-                </div>
+            
             </Grid>
         </Grid>
     )
