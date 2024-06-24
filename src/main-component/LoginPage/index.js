@@ -40,7 +40,7 @@ const LoginPage = (props) => {
             const storedUser = JSON.parse(localStorage.getItem('user'));
             if (storedUser && storedUser.email === value.email && storedUser.password === value.password) {
                 toast.success('Inicio de sesión exitoso!');
-                navigate('/');  // Redirigir a la página de inicio
+                navigate('/');  
             } else {
                 toast.error('Correo o contraseña incorrectos!');
             }

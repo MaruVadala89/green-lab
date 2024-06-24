@@ -43,8 +43,6 @@ const WishlistPage = (props) => {
                               <td className="product">
                                 <ul>
                                   <li className="first-cart">{wish.title} </li>
-                                  <li>Brand : {wish.brand}</li>
-                                  <li>Size : {wish.size}</li>
                                 </ul>
                               </td>
                               <td className="ptice">${wish.price}</td>

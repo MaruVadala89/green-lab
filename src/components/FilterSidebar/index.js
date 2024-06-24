@@ -56,7 +56,7 @@ const FilterSidebar = ({ filter, changeHandler, priceChangeHandler, searchQuery,
                 <li key={price.id}>
                   <label className="topcoat-radio-button__label">
                     ${price.min} {price.max ? "- $" : ""}
-                    {price.max || " and more"}
+                    {price.max || " y más"}
                     <input
                       checked={filter.price && filter.price.id === price.id}
                       type="radio"

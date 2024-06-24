@@ -54,7 +54,7 @@ const Footer = (props) =>{
                             <div className="widget-title">
                                 <h3>Descuentos</h3>
                             </div>
-                            <p>Si estas interesado/a te avisemos de nuestros descuentos, dejanos tu email.</p>
+                            <p>Si estas interesad@ que te avisemos de nuestros descuentos, dejanos tu email.</p>
                             <form>
                                 <div className="input-1">
                                     <input type="email" className="form-control" placeholder="Email Address *" required/>

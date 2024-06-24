@@ -39,7 +39,7 @@ const CartPage = (props) => {
                           <th className="product-2">Producto</th>
                           <th className="pr">Cantidad</th>
                           <th className="ptice">Precio</th>
-                          <th className="stock">Total:</th>
+                          <th className="stock">Total</th>
                           <th className="remove remove-b">Acción</th>
                         </tr>
                       </thead>

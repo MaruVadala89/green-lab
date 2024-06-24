@@ -9,20 +9,20 @@
     "clase": "Exterior",
     "category": "Flores",
     "description": "Nombre científico: Gardenia Augusta.\nUsos: como especie única, formando macizos arbustivos, en contenedores y en tierra.\nFollaje: perenne.\nRiego: moderado.\nExposición: pleno sol o media sombra.\nAltura: hasta 2m.\nFloración: primavera.\nColor de las flores: blancas.",
-    "stock": "In Stock"
+    "stock": "En stock"
   },
   {
     "id": 2,
     "proImg": "/product/2.png",
     "offer": "-10%",
     "title": "Gazania",
-    "price": "2100",
-    "delPrice": "$1890",
+    "price": "1890",
+    "delPrice": "$2100",
     "link": "/product-single",
     "clase": "Exterior",
     "category": "Flores",
     "description": "Nombre vulgar: Gazania.\nUsos: para formar macizos o rocallas.\nFollaje: perenne.\nRiego: moderado.\nExposición: pleno sol.\nAltura: 0,3m.\nFloración: desde principios de primavera hasta verano.\nColor de las flores: tonos amarillos, naranjas, blancas y rosadas.",
-    "stock": "In Stock"
+    "stock": "En stock"
   },
   {
     "id": 3,
@@ -34,33 +34,33 @@
     "clase": "Exterior",
     "category": "Flores",
     "description": "Nombre vulgar: Margarita africana.\nUsos: en macetas, canteros o como ejemplar aislado.\nFollaje: verde intenso.\nRiego: moderado.\nExposición: pleno sol o semi sombra.\nAltura: alrededor de 0,65m.\nFloración: primavera.\nColor de las flores: rosas, blancos, amarillos, violetas.",
-    "stock": "In Stock"
+    "stock": "En stock"
   },
   {
     "id": 4,
     "proImg": "/product/4.png",
     "offer": "-15%",
     "title": "Pothus",
-    "price": "2500",
-    "delPrice": "$2125",
+    "price": "2125",
+    "delPrice": "$2500",
     "link": "/product-single",
     "clase": "Interior",
     "category": "Plantas",
     "description": "Nombre vulgar: Potus o poto.\nUsos: planta de interior decorativa, en maceta o como colgante.\nFollaje: perenne.\nRiego: regular. Puede ser rociada en verano.\nExposición: buena iluminación pero no sol directo.\nFloración: no tiene flores de valor ornamental.",
-    "stock": "In Stock"
+    "stock": "En stock"
   },
   {
     "id": 5,
     "proImg": "/product/5.png",
     "offer": "-15%",
     "title": "Peperonia",
-    "price": "3400",
-    "delPrice": "$2900",
+    "price": "2900",
+    "delPrice": "$3400",
     "link": "/product-single",
     "clase": "Interior",
     "category": "Plantas",
     "description": "Nombre vulgar: Peperonia.\nUsos: planta de interior decorativa, en maceta.\nFollaje: perenne.\nRiego: regular.\nExposición: buena iluminación pero no sol directo.\nFloración: no tiene flores de valor ornamental.",
-    "stock": "In Stock"
+    "stock": "En stock"
   },
   {
     "id": 6,
@@ -72,20 +72,20 @@
     "clase": "Interior",
     "category": "Plantas",
     "description": "Nombre vulgar: Costilla de Adan.\nUsos: planta decorativa de interior en macetas.\nFollaje: perenne.\nRiego: regular.\nExposición: buena luz, pero no sol directo.\nFloración: no presenta flores de valor ornamental.",
-    "stock": "In Stock"
+    "stock": "En stock"
   },
   {
     "id": 7,
     "proImg": "/product/7.png",
     "offer": "-10%",
     "title": "Mandarina Criolla",
-    "price": "8800",
-    "delPrice": "$7920",
+    "price": "7920",
+    "delPrice": "$8800",
     "link": "/product-single",
     "clase": "Exterior",
     "category": "Arboles",
     "description": "Nombre científico: Citrus Reticulata.\nUsos: como ejemplar único o en monte frutal.\nFollaje: perenne.\nHojas lanceoladas con la base y ápice del limbo agudo. Peciolo largo y poco alado, articulado con el limbo. Estrujadas desprenden un olor característico.\nRiego: moderado.\nExposición: pleno sol.\nAltura: 5m.\nColor de las flores: blancas, muy aromáticas.\nSu fruto es comestible.",
-    "stock": "Stock Out"
+    "stock": "En stock"
   },
   {
     "id": 8,
@@ -97,46 +97,46 @@
     "clase": "Exterior",
     "category": "Arboles",
     "description": "Nombre científico: Citrus Aurantium.\nUsos: como ejemplar único o en monte frutal.\nFollaje: perenne.\nHoja: Son las más grandes y anchas. El margen es ligeramente aserrado (menos que el de las hojas de limonero). La base de la hoja es redondeada. El peciolo tiene unas alas enormes con forma de corazón.\nRiego: moderado.\nExposición: pleno sol.\nAltura: 5m.\nColor de las flores: blancas, muy aromáticas.\nSu fruto es comestible, se recoge en invierno. Tiene una pulpa que va desde el amarillo pálido (pomelo Blanco) hasta el rojo intenso (Pomelo rojo).",
-    "stock": "In Stock"
+    "stock": "En stock"
   },
   {
     "id": 9,
     "proImg": "/product/9.png",
     "offer": "-10%",
     "title": "Cerezo de Flor",
-    "price": "21291",
-    "delPrice": "$19172",
+    "price": "19172",
+    "delPrice": "$21291",
     "link": "/product-single",
     "clase": "Exterior",
     "category": "Arboles",
     "description": "Nombre científico: Prunus Serrulata.\nUsos: como ejemplar único.\nFollaje: caduco.\nRiego: moderado.\nExposición: pleno sol.\nAltura: 10m.\nFloración: florece antes que aparezcan las hojas en primavera.\nColor de las flores: rosadas.",
-    "stock": "In Stock"
+    "stock": "En stock"
   },
   {
     "id": 10,
     "proImg": "/product/10.png",
     "offer": "-10%",
     "title": "Petunia",
-    "price": "2863",
-    "delPrice": "$2577",
+    "price": "2577",
+    "delPrice": "$2863",
     "link": "/product-single",
     "clase": "Exterior",
     "category": "Flores",
     "description": "Nombre vulgar: Petunia.\nUsos: Para terrinas y jardineras colgantes así como para cubrir terrenos.\nRiego: regular.\nExposición: soporta sol directo y media sombra.\nAltura: 25cm de alto aproximandamente.\nFloración: Comienza en primavera hasta el verano.\nColor de las flores: blanco, lavanda, rosa, roja, púrpura claro y mezcla (incluidos colores intermedios).",
-    "stock": "In Stock"
+    "stock": "En stock"
   },
   {
     "id": 11,
     "proImg": "/product/11.png",
     "offer": "-15%",
     "title": "Pensamiento",
-    "price": "935",
-    "delPrice": "$795",
+    "price": "795",
+    "delPrice": "$935",
     "link": "/product-single",
     "clase": "Exterior",
     "category": "Flores",
     "description": "Nombre Vulgar: Pensamiento.\nFollaje: anual.\nCultivo a pleno sol o ligeramente sombreado.\nUso: En macetas, para decorar.\nRiego: moderado.\nÉpoca de Siembra: Julio – Septiembre. Germina a 15-18ºC en 14-20 días.\nÉpoca de Floración: desde la primavera al verano.\nColor de las flores: violetas, amarillas, blancas.",
-    "stock": "In Stock"
+    "stock": "En stock"
   },
   {
     "id": 12,
@@ -148,46 +148,46 @@
     "clase": "Exterior",
     "category": "Flores",
     "description": "Nombre científico: Erysimum (Aleli).\nUsos: Macetas y canteros.\nFollaje: Perenne, ciclo otoño-invierno.\nRiego: Moderado.\nExposición: Pleno sol.\nAltura: 40 a 50cm.\nFloración: otoño invierno.\nColor de Flor: Variados.",
-    "stock": "In Stock"
+    "stock": "En stock"
   },
   {
     "id": 13,
     "proImg": "/product/13.png",
     "offer": "-10%",
     "title": "Coleus",
-    "price": "1700",
-    "delPrice": "$1530",
+    "price": "1530",
+    "delPrice": "$1700",
     "link": "/product-single",
     "clase": "Interior",
     "category": "Plantas",
     "description": "Nombre vulgar: Coleo. (Coleus).\nUsos: colgante, en maceta o en el exterior.\nFollaje: anual o perenne.\nRiego: regular.\nExposición: buena luminosidad pero no sol pleno.\nAltura: 30cm.\nFloración: No son de importancia ornamental. Tiene lugar entre el otoño y el invierno.",
-    "stock": "In Stock"
+    "stock": "En stock"
   },
   {
     "id": 14,
     "proImg": "/product/14.png",
     "offer": "-10%",
     "title": "Helecho Arroz",
-    "price": "4500",
-    "delPrice": "$4050",
+    "price": "4050",
+    "delPrice": "$4500",
     "link": "/product-single",
     "clase": "Interior",
     "category": "Plantas",
     "description": "Nombre vulgar: Helecho arroz.\nUsos: planta decorativa de interior.\nFollaje: perenne.\nRiego: regular.\nExposición: buena luz, pero no sol directo.\nFloración: no presenta flores.",
-    "stock": "In Stock"
+    "stock": "En stock"
   },
   {
     "id": 15,
     "proImg": "/product/15.png",
     "offer": "-15%",
     "title": "Citara",
-    "price": "5000",
-    "delPrice": "$4250",
+    "price": "4250",
+    "delPrice": "$5000",
     "link": "/product-single",
     "clase": "Interior",
     "category": "Plantas",
     "description": "Nombre vulgar: Citara.\nUsos: de interior en maceta.\nFollaje: perenne, de color violáceo.\nRiego: moderado.\nExposición: Necesita luz intensa, preferentemente en el interior.\nAltura: alrededor de 30cm.\nFloración: Poco decorativa, no tiene importancia ornamental.",
-    "stock": "In Stock"
+    "stock": "En stock"
   },
   {
     "id": 16,
@@ -199,7 +199,7 @@
     "clase": "Exterior",
     "category": "Arboles",
     "description": "Nombre vulgar: Limpiatubos, Árbol del cepillo, Escobillón rojo, Limpiabotellas.(callistemon).\nNombre científico: Callistemon Citrinus Imperialis.\nUsos: ornamental, se adapta a macetas.\nFollaje: perenne.\nRiego: moderado.\nExposición: pleno sol.\nAltura: hasta 4m.\nFloración: en verano.\nColor de las flores: rojo.",
-    "stock": "In Stock"
+    "stock": "En stock"
   },
   {
     "id": 17,
@@ -211,19 +211,19 @@
     "clase": "Exterior",
     "category": "Arboles",
     "description": "Nombre científico: Junglans Regia.\nUsos: En jardinería como ejemplar único.\nFollaje: caducifolio, de color verde claro.\nRiego: moderado.\nExposición: sol pleno.\nAltura: entre 25-30m.\nEl fruto se utiliza para la industria alimenticia.\nRequiere suelos húmedos, profundos y bien drenados y una exposición soleada.",
-    "stock": "In Stock"
+    "stock": "En stock"
   },
   {
     "id": 18,
     "proImg": "/product/18.png",
     "offer": "-10%",
     "title": "Kiri",
-    "price": "9200",
-    "delPrice": "$8280",
+    "price": "8280",
+    "delPrice": "$9200",
     "link": "/product-single",
     "clase": "Exterior",
     "category": "Arboles",
     "description": "Nombre vulgar: Kiri.\nUsos: como ejemplar único o para formar setos.\nFollaje: caducifolio.\nRiego: no necesita.\nExposición: pleno sol.\nAltura: 12m.\nFloración: primavera.\nColor de las flores: violeta.",
-    "stock": "In Stock"
+    "stock": "En stock"
   }
 ]
