@@ -39,7 +39,7 @@ class Hero2 extends Component {
                                                 </h2>
                                             </div>
                                             <div className="btns">
-                                                <Link to="/shop" className="btn theme-btn">Compra ahora <i className="fa fa-angle-double-right"></i></Link>
+                                                <Link to="/shop" className="btn theme-btn">Comprá ahora <i className="fa fa-angle-double-right"></i></Link>
                                             </div>
                                         </div>
                                     </div>

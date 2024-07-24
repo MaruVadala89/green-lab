@@ -287,7 +287,24 @@
         }
     }
     
-
+    .input-1 {
+        position: relative;
+      
+        input[type="email"] {
+          width: 250px; // Ancho específico del campo de email
+          padding: 10px;
+          font-size: 16px;
+          padding-right: 40px; // Espacio para el ícono a la derecha
+        }
+      
+        .ti-email {
+          position: absolute;
+          top: 50%;
+          right: 10px; // Ajusta la posición del ícono a la derecha del campo
+          transform: translateY(-50%);
+          cursor: pointer; // Añade un cursor para indicar que es interactivo
+        }
+      }
     .newsletter-widget {
         form {
             margin-top: 25px;

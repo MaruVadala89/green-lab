@@ -12,13 +12,13 @@ export const wishListReducer = (state = init, action) => {
       if (
         state.w_list.findIndex((product) => product.id === productId) !== -1
       ) {
-        toast.error("Item Removed from Wishlist");
+        toast.error("Producto removido de favoritos");
         const w_list = state.w_list.filter(
           (product) => product.id !== productId
         );
         return { ...state, w_list };
       }
-      toast.success("Item Added to Wishlist");
+      toast.success("Producto agregado a favoritos");
       return {
         ...state,
         w_list: [

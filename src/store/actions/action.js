@@ -18,7 +18,7 @@ export const receiveProducts = (products) => ({
 });
 
 export const addToCart = (product, qty, color, size) => (dispatch) => {
-  toast.success("Item Added to Cart");
+  toast.success("Producto agregado al carrito");
   dispatch({
     type: types.ADD_TO_CART,
     product,
@@ -29,7 +29,7 @@ export const addToCart = (product, qty, color, size) => (dispatch) => {
 };
 
 export const removeFromCart = (product_id) => (dispatch) => {
-  toast.success("Item Removed from Cart");
+  toast.success("Producto removido del carrito");
   dispatch({
     type: types.REMOVE_FROM_CART,
     product_id,
@@ -51,6 +51,7 @@ export const decrementQuantity = (product_id) => (dispatch) => {
 };
 
 export const addToWishList = (product) => (dispatch) => {
+ 
   dispatch({
     type: ADD_TO_WISHLIST,
     product,
@@ -58,7 +59,7 @@ export const addToWishList = (product) => (dispatch) => {
 };
 
 export const removeFromWishList = (id) => (dispatch) => {
-  toast.error("Item removed from WishList");
+
   dispatch({
     type: REMOVE_FROM_WISHLIST,
     id,
